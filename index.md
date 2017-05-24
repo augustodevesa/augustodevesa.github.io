@@ -1,1 +1,0 @@
-[NOVUM OB Integration Provisoning Assesment for Trouble Shooting](https://github.com/augustodevesa/augustodevesa.github.io/blob/master/OB%20Integration%20Provisioning%20Integration%20troubleshooting%20for%20NOVUM.md)
