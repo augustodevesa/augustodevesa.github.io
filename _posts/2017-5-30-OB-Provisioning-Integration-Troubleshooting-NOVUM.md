@@ -9,18 +9,18 @@ OB integration & gOB Task:
 
 1. References & Related Inf
 2. Objective, assumptions & current situation
-2.1 WHAT?
-2.2 WHY?
-2.3 HOW?
+    + 2.1 WHAT?
+    + 2.2 WHY?
+    + 2.3 HOW?
 3. Technical assessment
 4. gOB current troubleshooting solution
-4.1 gOB Call and SMS CDRs
-4.2 gOB run logs
-4.3 gOB fault alarms & performance alarms
-4.4 NGIN provided tools
+    + 4.1 gOB Call and SMS CDRs
+    + 4.2 gOB run logs
+    + 4.3 gOB fault alarms & performance alarms
+    + 4.4 NGIN provided tools
 5. OB integrations current troubleshooting tools
-5.1 Splunk
-5.2 Voipmonitor
+    + 5.1 Splunk
+    + 5.2 Voipmonitor
 6. Short-term troubleshooting solution for NOVUM
 7. Mid/long-term troubleshooting solution evolution for NOVUM
 8. Conclusions
