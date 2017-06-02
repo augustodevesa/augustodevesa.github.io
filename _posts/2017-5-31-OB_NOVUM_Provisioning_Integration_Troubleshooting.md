@@ -368,7 +368,7 @@ Act0001 | Process Concluded | Activation | true | 0 | 9785 | 9739
 
 Responses to Failure at step RegisterObUser (sync response to ActivateService in OB)
 
-ob | reason | n\_responses | %_ob | t
+ob | reason | n\_responses | %\_ob | t
 ar | 403-SVC1022-Overlapping subscriptions Already existing. Subscription Identifiers are...  | 117 | 99.2 | 118
 
 
@@ -378,7 +378,10 @@ Some unexpected transitions might happen.
 event\_from\_ob | ACTIVE | DELETED | DELETING | PENDING | SUSPENDED
 Argentina: Activation Completed | 22 | 4 | |  7789
 Argentina: Activation Failed | 11 | 13 | |  951 |  
-Argentina: Deactivation Completed
+Argentina: Deactivation Completed |  |  |  |  |
+
+For monitoring KPI we propopuse the ones described in this [document](https://docs.google.com/a/tuenti.com/document/d/1iJ6Zrnksnlk7SYqj09pwcykbRu8g6nXOMO3mYY3y24I/edit?usp=sharing).
+
 
 
 ## 3.6. BI CDRs 
