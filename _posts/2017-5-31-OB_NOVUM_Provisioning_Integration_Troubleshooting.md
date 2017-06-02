@@ -36,11 +36,9 @@ OB integration & gOB Task:
 In the case of TU the provisioning flow was managed e2e from gBE. Therefore it used to be SEEN Team who owned the control and troubleshooting of this flow.
 In the case of NOVUM the provisioning flow changes radically, therefore the way we work must change. 
 Regaring OB Integration share the provisioning flow starts when ObProv component dispach the ACTIVATE service event towards rSDP and finish when gOB recieves the startCall and startSMSNotifications events.
-This means that we should be able to give mainly support about gOB provisioning status, but it shall be discused if we may also give support regaring SDP and OB provisioning status as a technical reference team for the OBs.
+This means that we should be able to give mainly support about gOB provisioning issues and incidences. 
 
-~~~~
-Sobre flujos de provision, ¿Mantendremos responsabilidad e2e de los flujos de provision como legacy de SEEN?
-~~~~
+Besides our scope of action regarding ObProv component limits to users of the information it generates and as technical focal point for OBs. Therefore we keep watching the service with an end to end view.
 
 
 
@@ -48,9 +46,8 @@ Sobre flujos de provision, ¿Mantendremos responsabilidad e2e de los flujos de p
 This document is intended to analyse current troubleshooting solution of OB-related arround provisinioning how to improve it and evolve it according to NOVUM requirements.
  
 Due to OB Integration is the main technical focalpoint team for the OBs regarding IPComms integration, we should be able give support outside NOVUM BE and SDP integration.
-~~~
-+ Que sucede con SDP, es parte importante de la integración pero es un componente cuya responsabilidad es de la OB, Nuestro punto de observación sería ObProv Component.  ¿Debemos crear nosotros las herramientas de troubleShooting en ObProv,  tal como hacemos en los servers OREJAS de gBE?
-~~~
+
+In order to do so we need tools like dasboards, pre builded search and reports from ObPov
 
 
 
@@ -285,7 +282,7 @@ Due to TRIPAS has not been considered as part of NOVUM infrastructure the server
  
  CDRs generation process is being developed under this [specification file](https://docs.google.com/a/tuenti.com/document/d/1eriJ2pJxTHBuVw9Ij-d32lnN3c3g5PaumvpSDCaV654/edit?usp=sharing) 
  
- ## 3.4. gOB CDRs and Runlogs
+## 3.4. gOB CDRs and Runlogs
 
 Like today gOB CDRs and Runlogs, service CDRs are being hosted on TRIPAS servers and being fowarded to splunk, for NOVUM It’s a MUST to gather this files and include them on EFK to be accessible through Kibana for trouble shooting purpose.
 
