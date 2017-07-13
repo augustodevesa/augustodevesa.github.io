@@ -431,7 +431,18 @@ In long run, the action protocol for the NOC has to be rebuild.
 
 On behalf of Service Managment Ivan Fridman and Rodrigo Da Silve are rebuilding the operations protocol in order to deliver the NOC and internally and end to end mnitoring and supervising view  of the service.
 
+# 6. References 
+Apps aims to this endpoints for media and signaling traffic.
+  - { trans1-prd.mytelco.io.: {TTL: 900, Type: A, Value: [193.104.44.196]}}
+  - { trans2-prd.mytelco.io.: {TTL: 900, Type: A, Value: [193.104.44.197]}}
+  - { trans3-prd.mytelco.io.: {TTL: 900, Type: A, Value: [193.104.44.198]}}
+  - { trans4-prd.mytelco.io.: {TTL: 900, Type: A, Value: [193.104.44.199]}}
+  - { trans5-prd.mytelco.io.: {TTL: 900, Type: A, Value: [193.104.44.200]}}
+  - { trans6-prd.mytelco.io.: {TTL: 900, Type: A, Value: [193.104.44.201]}}
+  - { trans7-prd.mytelco.io.: {TTL: 900, Type: A, Value: [193.104.44.202]}}
+  - { trans8-prd.mytelco.io.: {TTL: 900, Type: A, Value: [193.104.44.203]}}
 
+  - { prd.mytelco.io.: {TTL: 60, Type: A, Value: [ 193.104.44.65 ]}}
 
 
 ----
