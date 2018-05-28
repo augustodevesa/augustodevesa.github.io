@@ -2,17 +2,90 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+	<meta charset="utf-8">
+	<title>_My first Page (Template)</title>
+	<link rel="stylesheet" type="text/css" href="myCSS/myCSS.css">
+
+</head>
+<body>
+	<header>
+		<p>Se podria hacer un programita que autocomplete el html con las imagenes de un directorio</p>
+	</header>
+	<main>
+
+		<h1>TEST PAGE para jugar un poco</h1>
+		<p>
+			This is the main code
+			<a href="www.google.com">ir a goole</a>
+			<a href = "www.wikipedia.org">wikipedia.org</a>
+			<a href = "IMG_dali.jpg">My dog</a> chews socks.
+			<br>
+
+		</p>
+
+
+    <div class="posts">
+      {% for post in site.posts %}
+        <article class="post">
+
+          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
+
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </article>
+      {% endfor %}
+    </div>
+
+
+
+		<figure>
+			<img src="IMG_dali.jpg"
+			width="50%"
+
+			align="center"
+			alt="Momo Dali">
+			<figcaption> setting the image size
+
+
+			</figcaption>
+		</figure>
+		<video src= "https://www.youtube.com/embed/a-BOSpxYJ9M" frameborder="0" allow="autoplay; encrypted-media" width="50%" autoplay controls>your browser does not support the
+			<code> video </code>
+
+		</video>
+		<br>
+		<iframe width="1280" height="532" src="https://www.youtube.com/embed/a-BOSpxYJ9M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<br/>
+
+		<audio src= "https://soundcloud.com/classicsandjazz/sets/keith-jarrett-charlie-haden-paul-motian-hamburg-72" controls>
+
+
+		</audio>
+		<br/>
+		<table width="50%" border="2">
+			<tr><th rowspan="2">row 1</th><th> row 2</th> <th> Row3 </th> </td></tr>
+			<tr><td colspan="2"> One </td> <td> two </td> <td> three</td></tr>
+
+
+
+		</table>
+
+
+
+	</main>
+	<footer>
+		<p>
+			This an uninteresting code
+		</p>
+	</footer>
+</body>
+</html>
