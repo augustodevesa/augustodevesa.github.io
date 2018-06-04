@@ -6,26 +6,24 @@ layout: default
 <head>
 
 	<meta charset="utf-8">
-	<title>_My first Page (Template)</title>
-	<link rel="stylesheet" type="text/css" href="myCSS/myCSS.css">
+	<title>Augusto Web Page </title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 	<header>
-		<p>Se podria hacer un programita que autocomplete el html con las imagenes de un directorio</p>
+    <h1>TEST PAGE para jugar un poco</h1>
+  <p>
+    This is the main code
+    <a href="www.google.com">ir a goole</a>
+    <a href = "www.wikipedia.org">wikipedia.org</a>
+    <a href = "IMG_dali.jpg">My dog</a> chews socks.
+  </p>
+  <br>
 	</header>
 	<main>
-
-		<h1>TEST PAGE para jugar un poco</h1>
-		<p>
-			This is the main code
-			<a href="www.google.com">ir a goole</a>
-			<a href = "www.wikipedia.org">wikipedia.org</a>
-			<a href = "IMG_dali.jpg">My dog</a> chews socks.
-			<br>
-
-		</p>
-
 
     <div class="posts">
       {% for post in site.posts %}
@@ -42,7 +40,6 @@ layout: default
       {% endfor %}
     </div>
 
-		</figure>
 		<!--- video src= "https://www.youtube.com/embed/a-BOSpxYJ9M" frameborder="0" allow="autoplay; encrypted-media" width="25%" autoplay controls>your browser does not support the
 			<code> video </code>
 
@@ -51,26 +48,25 @@ layout: default
 		<iframe width="50%" src="https://www.youtube.com/embed/a-BOSpxYJ9M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		<br/>
 
-		<audio src= "https://soundcloud.com/classicsandjazz/sets/keith-jarrett-charlie-haden-paul-motian-hamburg-72" controls>
+		<!-- audio src= "https://soundcloud.com/classicsandjazz/sets/keith-jarrett-charlie-haden-paul-motian-hamburg-72" controls>
 
-		</audio>
+		</audio--->
 
-		<br/>
-		<table width="50%" border="2">
+		<!-- table width="50%" border="2">
 			<tr><th rowspan="2">row 1</th><th> row 2</th> <th> Row3 </th> </td></tr>
 			<tr><td colspan="2"> One </td> <td> two </td> <td> three</td></tr>
 
 
 
-		</table>
+		</table-->
 
 
 
 	</main>
-	<footer>
-		<p>
-			This an uninteresting code
-		</p>
-	</footer>
+  <footer>
+    <p>Find me on social media.</p>
+    <a href="https://twitter.com/AugustoDevesa">  <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/augustodevesa/">  <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </footer>
 </body>
 </html>
