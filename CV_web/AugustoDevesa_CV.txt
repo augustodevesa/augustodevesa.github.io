@@ -1,0 +1,59 @@
+Augusto Devesa CV
+
+Integrations Engineer
+
+# Contact Info:
++ Buenos Aires, ARG
++ email: augustod@gmail.com<
++ mobile: +5491138543260
+
+Skills
++ Agile Metodologies / DevOps: 100%
++ Project Managment: 100%
++ Telecoms / IT: 100%<
++ Service Managment: 90%
+
+Languages:
++ English
++ Spanish
+
+
+# My Path
+
+Jan 2017 - Current: Integration Eng: Telefonica-NOVUM
+  Novum is a Telefonica transformative project, It is changing the way customers interact with the organization. I’m responsible for the integration between the app and the communications network and core systems. The goal is to deliver an integrated experience to the customer, giving him a single app to manage all Telefonica’s services. 
+          Current plan is to grow from 800K users to 2,5MM by end of 2018 1st half.
+          Reference: Angel David Gallegos Pajares: david.gallegospajares@telefonica.com></p>
+
+May 2014 - Jan 2017: OB Coordinator: MovistarTU - TUGo 
+  TUGO-MovistarTU was the first Telefonica’s app allowing customers to make and receive calls and messages wherever they were by using internet connectivity. I have been responsible for Integration, launching and operation of the service in Arg, Peru, Colombia, Mexico, and Caribbean. I’m proud of being part of the team that reached, from scratch, 1,5 MM users, 99,5 % of platform availability and a restoration time of less than 2 hs.
+          Reference: David Pedreira / tel: +541127723880 / https://www.linkedin.com/in/david-pedreira-2976081/?locale=es_ES
+
+Jan 2012 - May 2014: Product Manager - Telefonica Corporative Seg
+  Telefonica de Argentina, develops the corporative segment, delivering aggregated value services as integrated communications solutions. I have been responsible for the partners development agreements with Cisco, Avaya, Simmens, etc and the years sales budget accomplishment  (8MM USD) for reselling Comms, Infrastructure and Networking solutions. 
+          Reference: Jilio Brignole  / tel: +541144913967 / https://www.linkedin.com/in/julio-brignole-3026ab3/
+
+Jan 2007 - Dic 2011: Project Manager - Telefonica Empresas
+  Responsible for the deployment of Industry, Health and Services corporative segment comms and infrastructure projects. 
+
+Some of the most significant projects I had lead were:
++ McDonals: 150 stores IP telephony and Networking infrastructure
++ DOT - Baires Shopping: IP telephony and Networking infrastructure deployment for the site opening. 
++ Municipalidad de Tandil: measured parking solution.
++ MetroGas: A 400 points of telemetry network and its core systems, 
++ Halliburton: IP telephony and Networking infrastructure deployment
++ Barrick Gold: IP telephony and Networking infrastructure site migration
++ Carrefour: 200 retail stores networking infrastructure
+Reference:
+            Juan Filipich / https://www.linkedin.com/in/juan-filipich-25b70b43/
+            Juan Carlos Ogue https://www.linkedin.com/in/juan-carlos-ogue-0292a3/
+
+Education 
++ ITBA: Currently Post Degree course: Agile Metodologies
++ Universidad Argentina de la Empresa: 2008 - 2012 Telecoms Engineering
++ Universidad Tecnológica Nacional: 2009 Project Management Specialist
++ Universidad Tecnológica Nacional: 2008 - Electronics Engineering        
+
+# Find me on social media.
+https://twitter.com/AugustoDevesa"
+https://www.linkedin.com/in/augustodevesa/
