@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Augusto Carlos Devesa — CV 2026</title>
+<meta name="description" content="CV de Augusto Carlos Devesa — Project Manager Senior, integración tecnológica, cloud y operaciones a escala nacional.">
+<style>
+  :root {
+    --teal: #0e7490;
+    --teal-dark: #155e75;
+    --teal-soft: #ecfeff;
+    --ink: #1f2937;
+    --muted: #5b6675;
+    --line: #e2e8ee;
+    --bg: #f4f6f8;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ---------- language switching ---------- */
+  html[lang="en"] .es { display: none !important; }
+  html[lang="es"] .en { display: none !important; }
+
+  /* ---------- toolbar ---------- */
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, .92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .toolbar button {
+    font: inherit;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all .15s ease;
+  }
+
+  .toolbar button:hover { border-color: var(--teal); color: var(--teal-dark); }
+
+  .toolbar button[aria-pressed="true"] {
+    background: var(--teal);
+    border-color: var(--teal);
+    color: #fff;
+  }
+
+  /* ---------- page ---------- */
+  .page {
+    max-width: 900px;
+    margin: 24px auto 48px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 12px 32px rgba(16, 24, 40, .07);
+    overflow: hidden;
+  }
+
+  header.cv-head {
+    padding: 34px 40px 26px;
+    background: linear-gradient(135deg, var(--teal-dark), var(--teal));
+    color: #fff;
+  }
+
+  header.cv-head h1 {
+    margin: 0 0 4px;
+    font-size: 30px;
+    letter-spacing: -.4px;
+  }
+
+  header.cv-head .headline {
+    margin: 0 0 16px;
+    font-size: 15.5px;
+    font-weight: 600;
+    color: #cdf3fb;
+  }
+
+  header.cv-head .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    font-size: 13.5px;
+  }
+
+  header.cv-head .contact a { color: #fff; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,.5); }
+  header.cv-head .contact a:hover { border-bottom-style: solid; }
+
+  header.cv-head .updated {
+    margin-top: 14px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .72);
+  }
+
+  main { padding: 30px 40px 40px; }
+
+  section { margin-bottom: 30px; }
+
+  h2 {
+    margin: 0 0 14px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    color: var(--teal-dark);
+    border-bottom: 2px solid var(--teal-soft);
+  }
+
+  h3 { margin: 0 0 2px; font-size: 16.5px; }
+
+  .meta {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+
+  .meta .period { font-weight: 600; color: var(--teal-dark); }
+
+  .entry {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px dashed var(--line);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .entry .context {
+    font-size: 13px;
+    font-style: italic;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+
+  p { margin: 0 0 10px; }
+
+  ul { margin: 0 0 10px; padding-left: 20px; }
+
+  li { margin-bottom: 5px; }
+
+  li::marker { color: var(--teal); }
+
+  strong { color: #111827; }
+
+  /* ---------- competencies ---------- */
+  .comp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .comp {
+    background: #fafcfd;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--teal);
+    border-radius: 8px;
+    padding: 12px 14px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .comp h4 {
+    margin: 0 0 6px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--teal-dark);
+  }
+
+  .comp p { margin: 0; font-size: 13.5px; color: #374151; }
+
+  /* ---------- tables ---------- */
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: .6px; color: var(--muted); }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  /* ---------- tags ---------- */
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+
+  .tag {
+    font-size: 12.5px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--teal-soft);
+    color: var(--teal-dark);
+    border: 1px solid #cffafe;
+  }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0 0 20px;
+  }
+
+  .stat {
+    text-align: center;
+    padding: 12px 6px;
+    border-radius: 8px;
+    background: var(--teal-soft);
+    break-inside: avoid;
+  }
+
+  .stat b { display: block; font-size: 19px; color: var(--teal-dark); line-height: 1.2; }
+  .stat span { font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+
+  footer.cv-foot {
+    margin-top: 8px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+    font-size: 12.5px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  a { color: var(--teal-dark); }
+
+  /* ---------- print ---------- */
+  @page { size: A4; margin: 12mm 10mm; }
+
+  @media print {
+    body { background: #fff; font-size: 10.6pt; }
+
+    .toolbar { display: none !important; }
+
+    .page {
+      max-width: none;
+      margin: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    header.cv-head { padding: 18px 0 14px; background: var(--teal-dark) !important; }
+    main { padding: 16px 0 0; }
+
+    h2 { break-after: avoid; page-break-after: avoid; }
+    h3 { break-after: avoid; page-break-after: avoid; }
+
+    .entry, .comp, .stat, tr { break-inside: avoid; page-break-inside: avoid; }
+
+    .comp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 720px) {
+    main, header.cv-head { padding-left: 20px; padding-right: 20px; }
+    .comp-grid, .stat-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button type="button" id="btn-es" aria-pressed="true">ES</button>
+  <button type="button" id="btn-en" aria-pressed="false">EN</button>
+  <button type="button" id="btn-print"><span class="es">Imprimir / PDF</span><span class="en">Print / PDF</span></button>
+</div>
+
+<div class="page">
+
+  <header class="cv-head">
+    <h1>Augusto Carlos Devesa</h1>
+    <p class="headline">
+      <span class="es">Project Manager Senior · Integración tecnológica, Cloud y Operaciones a escala nacional</span>
+      <span class="en">Senior Project Manager · Technology Integration, Cloud &amp; National-Scale Operations</span>
+    </p>
+    <div class="contact">
+      <span><span class="es">Buenos Aires, Argentina</span><span class="en">Buenos Aires, Argentina</span></span>
+      <span><a href="mailto:augustod@gmail.com">augustod@gmail.com</a></span>
+      <span><a href="tel:+5491138543260">+54 9 11 3854 3260</a></span>
+      <span><a href="https://www.linkedin.com/in/augustodevesa/" target="_blank" rel="noopener">linkedin.com/in/augustodevesa</a></span>
+    </div>
+    <p class="updated">
+      <span class="es">Actualizado: septiembre 2026</span>
+      <span class="en">Updated: September 2026</span>
+    </p>
+  </header>
+
+  <main>
+
+    <!-- ============ PROFILE ============ -->
+    <section>
+      <h2><span class="es">Perfil profesional</span><span class="en">Professional profile</span></h2>
+
+      <div class="stat-row">
+        <div class="stat"><b>18+</b><span class="es">Años en tecnología</span><span class="en">Years in technology</span></div>
+        <div class="stat"><b>7.500+</b><span class="es">Intervenciones entregadas</span><span class="en">Interventions delivered</span></div>
+        <div class="stat"><b>9.700</b><span class="es">Escuelas alcanzadas</span><span class="en">Schools covered</span></div>
+        <div class="stat"><b>50+</b><span class="es">Cuentas de contratistas</span><span class="en">Contractor accounts</span></div>
+      </div>
+
+      <div class="es">
+        <p>Ingeniero en Telecomunicaciones con más de 18 años de experiencia en proyectos de tecnología y telecomunicaciones, y más de una década liderando proyectos de forma directa. Combino gestión de proyectos senior —PMBOK, marcos híbridos y ágiles— con capacidad técnica real: integración de sistemas y redes, infraestructura cloud, automatización y desarrollo web.</p>
+        <p>Lideré un programa nacional de conectividad en aproximadamente <strong>9.700 escuelas</strong> con más de <strong>7.500 intervenciones entregadas</strong> y picos de <strong>1.100 intervenciones exitosas por mes</strong>. Cofundé y gestioné una startup de tecnología médica que llevó al mercado un simulador laparoscópico y modelos anatómicos impresos en 3D. Antes, en Telefónica, fui responsable de integración, lanzamiento y operación de servicios digitales con <strong>1,5 millones de usuarios</strong> y <strong>99,5 % de disponibilidad</strong>.</p>
+        <p>Trabajo indistintamente en español e inglés, con experiencia coordinando equipos interdisciplinarios, contratistas y contrapartes de cliente en Argentina y Latinoamérica.</p>
+      </div>
+
+      <div class="en">
+        <p>Telecommunications Engineer with 18+ years of experience in technology and telecommunications projects, and over a decade leading projects directly. I combine senior project management —PMBOK, hybrid and agile frameworks— with genuine hands-on technical capability: systems and network integration, cloud infrastructure, automation, and web development.</p>
+        <p>I led a national connectivity program covering approximately <strong>9,700 schools</strong> with <strong>7,500+ delivered interventions</strong> and peaks of <strong>1,100 successful interventions per month</strong>. I co-founded and managed a medical technology startup that brought a laparoscopic simulator and 3D-printed anatomical models to market. Earlier, at Telefónica, I owned the integration, launch, and operation of digital services serving <strong>1.5 million users</strong> at <strong>99.5% platform availability</strong>.</p>
+        <p>I work fluently in Spanish and English, with a track record of coordinating interdisciplinary teams, contractors, and client counterparts across Argentina and Latin America.</p>
+      </div>
+    </section>
+
+    <!-- ============ COMPETENCIES ============ -->
+    <section>
+      <h2><span class="es">Competencias clave</span><span class="en">Core competencies</span></h2>
+
+      <div class="comp-grid">
+
+        <div class="comp">
+          <h4><span class="es">Gestión de proyectos</span><span class="en">Project management</span></h4>
+          <p class="es">Planificación y líneas base · EDT · Cronograma y dependencias · Riesgos e issues · Control de cambios · Gobierno y reporting ejecutivo · Stakeholders · Presupuesto y trazabilidad financiera por entregable · Contratistas y proveedores · Criterios de aceptación.</p>
+          <p class="en">Planning and baselines · WBS · Scheduling and dependencies · Risk and issue management · Change control · Governance and executive reporting · Stakeholders · Budget and per-deliverable financial traceability · Contractor and vendor management · Acceptance criteria.</p>
+        </div>
+
+        <div class="comp">
+          <h4><span class="es">Marcos de trabajo</span><span class="en">Frameworks</span></h4>
+          <p class="es">PMBOK · Entrega híbrida (waterfall para compras, aprovisionamiento, logística y cierre; ágil para ejecución en terreno) · Scrum · Kanban · Disciplined Agile (formación) · Lean Startup · Mejora continua.</p>
+          <p class="en">PMBOK · Hybrid delivery (waterfall for procurement, provisioning, logistics and closure; agile for field execution) · Scrum · Kanban · Disciplined Agile (trained) · Lean Startup · Continuous improvement.</p>
+        </div>
+
+        <div class="comp">
+          <h4><span class="es">Integración y arquitecturas</span><span class="en">Integration &amp; architecture</span></h4>
+          <p class="es">Integración de sistemas y redes de comunicaciones (voz, mensajería, datos, Wi-Fi) · APIs REST · Webhooks y validación de firmas · OAuth 2.0 / PKCE · Idempotencia y reintentos · Pasarelas de pago (Mercado Pago: Checkout Pro, Orders API, marketplace) · Documentación de arquitectura.</p>
+          <p class="en">Communications systems and network integration (voice, messaging, data, Wi-Fi) · REST APIs · Webhooks and signature validation · OAuth 2.0 / PKCE · Idempotency and retries · Payment gateways (Mercado Pago: Checkout Pro, Orders API, marketplace) · Architecture documentation.</p>
+        </div>
+
+        <div class="comp">
+          <h4><span class="es">Cloud e infraestructura</span><span class="en">Cloud &amp; infrastructure</span></h4>
+          <p class="es">Oracle Cloud Infrastructure (diseño e implementación en Always Free): VCN, subredes, Internet Gateway, tablas de ruteo, security lists · Cómputo ARM Ampere A1 · Ubuntu Server 24.04 LTS · SSH con clave ed25519 · OCI CLI y API Key · Contenedores y entornos Docker aislados.</p>
+          <p class="en">Oracle Cloud Infrastructure (design and hands-on build on Always Free): VCN, subnets, Internet Gateway, route tables, security lists · ARM Ampere A1 compute · Ubuntu Server 24.04 LTS · SSH with ed25519 keys · OCI CLI and API Key auth · Containers and sandboxed Docker environments.</p>
+        </div>
+
+        <div class="comp">
+          <h4><span class="es">Datos y automatización</span><span class="en">Data &amp; automation</span></h4>
+          <p class="es">SQL y modelado relacional · SQLite · Automatización en PowerShell · Generación automática de documentos (Markdown → HTML → PDF headless) · Python aplicado a integraciones y scripting · Git.</p>
+          <p class="en">SQL and relational modeling · SQLite · PowerShell automation · Automated document generation (Markdown → HTML → headless PDF) · Python for integrations and scripting · Git.</p>
+        </div>
+
+        <div class="comp">
+          <h4><span class="es">Web y operaciones</span><span class="en">Web &amp; operations</span></h4>
+          <p class="es">Next.js + Tailwind CSS (sitio bilingüe ES/EN) · TypeScript · HTML/CSS · Jekyll y GitHub Pages · Despliegue masivo en terreno · Logística y materiales · Mesas de soporte · Acuerdos de nivel de servicio y disponibilidad.</p>
+          <p class="en">Next.js + Tailwind CSS (bilingual ES/EN site) · TypeScript · HTML/CSS · Jekyll and GitHub Pages · Large-scale field deployment · Logistics and materials · Support desks · Service level and availability management.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section>
+      <h2><span class="es">Experiencia profesional</span><span class="en">Professional experience</span></h2>
+
+      <!-- OCPTECH -->
+      <div class="entry">
+        <h3><span class="es">Senior Project Manager</span><span class="en">Senior Project Manager</span> — OCPTECH</h3>
+        <p class="meta">
+          <span class="period"><span class="es">Ago 2022 – Mar 2025</span><span class="en">Aug 2022 – Mar 2025</span></span>
+          · <span class="es">Programa nacional de pisos tecnológicos escolares</span><span class="en">National school technology-floor program</span>
+        </p>
+        <p class="context">
+          <span class="es">Cliente: Educ.Ar / Ministerio de Educación de la República Argentina</span>
+          <span class="en">Client: Educ.Ar / Ministry of Education of Argentina</span>
+        </p>
+        <div class="es">
+          <p>Programa de escala nacional para instalar y mantener infraestructura Wi-Fi en aproximadamente 9.700 escuelas, con una meta de 700 intervenciones exitosas por mes y control operativo, de calidad, de contratistas y financiero.</p>
+          <ul>
+            <li>Dirigí un equipo interdisciplinario de <strong>11 roles de coordinación</strong> (un controller, tres coordinadores de infraestructura, cinco técnicos de mesa de soporte y dos coordinadores de operaciones) y aproximadamente <strong>50 cuentas de contratistas</strong>.</li>
+            <li>Diseñé y coordiné el <strong>modelo de entrega híbrido</strong>: compras, aprovisionamiento, logística, cierre y facturación por waterfall; planificación y ejecución de intervenciones en ciclos ágiles, cada sprint entregando lotes de escuelas completadas.</li>
+            <li>Se completaron aproximadamente <strong>7.500 intervenciones exitosas</strong>; se alcanzó la meta de 700 mensuales y un <strong>pico de 1.100</strong> intervenciones exitosas en un mes.</li>
+            <li>Definí cada intervención como entregable formal bajo un <strong>manual de aceptación aprobado por ambas partes</strong>, con certificaciones de facturación y acuerdos de contratistas como evidencia.</li>
+            <li>Sostuve el reporting ejecutivo, la gestión de riesgos e issues y la interfaz operativa con el cliente durante todo el programa.</li>
+            <li>Las intervenciones restantes fueron canceladas por el cliente por escuelas cerradas o inconsistencias en el registro oficial.</li>
+          </ul>
+        </div>
+        <div class="en">
+          <p>National-scale program to install and maintain Wi-Fi infrastructure across approximately 9,700 schools, targeting 700 successful interventions per month with operational, quality, contractor, and financial control.</p>
+          <ul>
+            <li>Led an interdisciplinary team of <strong>11 coordination roles</strong> (one controller, three infrastructure coordinators, five support desk technicians, and two operations coordinators) plus approximately <strong>50 contractor accounts</strong>.</li>
+            <li>Designed and coordinated the <strong>hybrid delivery model</strong>: procurement, provisioning, logistics, closure and billing run as waterfall; intervention planning and execution run in agile cycles, each sprint delivering a batch of completed schools.</li>
+            <li>Delivered approximately <strong>7,500 successful interventions</strong>, hit the 700-per-month target, and reached a <strong>peak of 1,100</strong> successful interventions in a single month.</li>
+            <li>Defined every intervention as a formal deliverable under an <strong>acceptance manual approved by both parties</strong>, backed by contractor agreements and customer billing certifications.</li>
+            <li>Owned executive reporting, risk and issue management, and the operational interface with the client throughout the program.</li>
+            <li>Remaining planned interventions were cancelled by the client due to closed schools and errors in the official school records.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MedicalBit -->
+      <div class="entry">
+        <h3><span class="es">Cofundador y Project Manager</span><span class="en">Co-founder &amp; Project Manager</span> — MedicalBit / MedicalSim</h3>
+        <p class="meta">
+          <span class="period"><span class="es">Ene 2021 – Jul 2022</span><span class="en">Jan 2021 – Jul 2022</span></span>
+          · <span class="es">Startup de tecnología médica</span><span class="en">Medical technology startup</span>
+        </p>
+        <p class="context">
+          <span class="es">Sociedad de hecho (Augusto Devesa – George Kassis) · Equipo de 6 personas · Presupuesto ~USD 5.000</span>
+          <span class="en">Partnership (Augusto Devesa – George Kassis) · 6-person team · ~USD 5,000 budget</span>
+        </p>
+        <div class="es">
+          <p>Desarrollo de modelos anatómicos específicos de paciente impresos en 3D y de un simulador laparoscópico de bajo costo para residentes médicos, con práctica háptica y métricas de desempeño (cantidad de movimientos, distancia recorrida y velocidad).</p>
+          <ul>
+            <li>Lideré el proyecto de concepto a mercado: alcance, roadmap de producto, validación iterativa con asesores médicos, priorización de backlog, gestión de presupuesto y riesgos, y lanzamiento comercial.</li>
+            <li>Coordiné actividades de software, hardware, diseño e impresión 3D bajo enfoque <strong>Lean Startup / Agile</strong>.</li>
+            <li>Se entregaron modelos 3D para aproximadamente <strong>50 casos clínicos</strong> (oncología, cirugía cardiovascular periférica, ginecología y urología); en los casos aplicables ayudaron a <strong>reducir el tiempo quirúrgico en aproximadamente 1 hora</strong>.</li>
+            <li>El simulador completó fases de demo y MVP de hardware y software, con manuales de operación y producto listo para producción.</li>
+            <li>Se vendieron unidades a instituciones como el centro de entrenamiento del <strong>Hospital Italiano de Buenos Aires</strong>, el <strong>Hospital Privado de Mar del Plata</strong> y la <strong>Sociedad Argentina de Ginecología</strong>.</li>
+          </ul>
+        </div>
+        <div class="en">
+          <p>Development of patient-specific 3D-printed anatomical models and a low-cost laparoscopic training simulator for medical residents, supporting haptic practice and capturing performance metrics (number of movements, traveled distance, and speed).</p>
+          <ul>
+            <li>Led the project from concept to market: scope definition, product roadmap, iterative validation with medical advisors, backlog prioritization, budget and risk management, and commercial launch.</li>
+            <li>Coordinated software, hardware, design, and 3D printing activities under a <strong>Lean Startup / Agile</strong> approach.</li>
+            <li>Delivered 3D models for approximately <strong>50 clinical cases</strong> (oncology, peripheral cardiovascular surgery, gynecology, urology); in applicable cases they helped <strong>reduce surgical time by roughly one hour</strong>.</li>
+            <li>The simulator completed demo and MVP phases for both hardware and software, with operation manuals and a production-ready product.</li>
+            <li>Units were sold to institutions including the <strong>Hospital Italiano de Buenos Aires</strong> training center, <strong>Hospital Privado de Mar del Plata</strong>, and the <strong>Sociedad Argentina de Ginecología</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Telefonica Novum -->
+      <div class="entry">
+        <h3><span class="es">Integration Engineer</span><span class="en">Integration Engineer</span> — Telefónica / Movistar (Novum)</h3>
+        <p class="meta">
+          <span class="period"><span class="es">Ene 2017 – 2021</span><span class="en">Jan 2017 – 2021</span></span>
+          · <span class="es">Transformación digital</span><span class="en">Digital transformation</span>
+        </p>
+        <div class="es">
+          <p>Programa de transformación digital que unificó los servicios de Telefónica en una única aplicación, con el objetivo de pasar de 800 mil a 2,5 millones de usuarios activos.</p>
+          <ul>
+            <li>Responsable de la integración del <strong>pilar de comunicaciones</strong> y facilitador de las integraciones de cuentas, mensajería y soporte.</li>
+            <li>Coordiné stakeholders técnicos y de negocio, definí alcance y dependencias de integración y alineé las plataformas de aplicación y de red.</li>
+            <li>Gestioné riesgos e issues de implementación y validé la readiness operativa antes de cada liberación.</li>
+          </ul>
+        </div>
+        <div class="en">
+          <p>Digital transformation program that unified Telefónica's services into a single app, targeting growth from 800K to 2.5M active users.</p>
+          <ul>
+            <li>Owned the <strong>communications pillar integration</strong> and acted as facilitator for account, messaging, and support integrations.</li>
+            <li>Coordinated technical and business stakeholders, defined integration scope and dependencies, and aligned application and network platforms.</li>
+            <li>Managed implementation risks and issues and validated operational readiness ahead of each release.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TU Go -->
+      <div class="entry">
+        <h3><span class="es">OB Coordinator</span><span class="en">OB Coordinator</span> — MovistarTU / TU Go</h3>
+        <p class="meta">
+          <span class="period"><span class="es">May 2014 – Ene 2017</span><span class="en">May 2014 – Jan 2017</span></span>
+          · <span class="es">Servicio de comunicaciones over-the-top</span><span class="en">Over-the-top communications service</span>
+        </p>
+        <div class="es">
+          <p>Primera aplicación de Telefónica que permitía a los clientes realizar y recibir llamadas y mensajes usando conectividad de internet.</p>
+          <ul>
+            <li>Responsable de integración, lanzamiento y operación del servicio en <strong>Argentina, Perú, Colombia, México y Caribe</strong>.</li>
+            <li>El servicio alcanzó <strong>1,5 millones de usuarios desde cero</strong>, <strong>99,5 % de disponibilidad</strong> y un tiempo de restauración inferior a 2 horas.</li>
+            <li>Gestioné la operación multi-país, la resolución de incidentes y la coordinación con las áreas de red y core.</li>
+          </ul>
+        </div>
+        <div class="en">
+          <p>Telefónica's first application allowing customers to make and receive calls and messages over internet connectivity.</p>
+          <ul>
+            <li>Responsible for integration, launch, and operation of the service across <strong>Argentina, Peru, Colombia, Mexico, and the Caribbean</strong>.</li>
+            <li>The service reached <strong>1.5 million users from scratch</strong>, <strong>99.5% availability</strong>, and a restoration time under 2 hours.</li>
+            <li>Ran multi-country operations, incident resolution, and coordination with network and core teams.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Product Manager -->
+      <div class="entry">
+        <h3><span class="es">Product Manager — Segmento Corporativo</span><span class="en">Product Manager — Corporate Segment</span> — Telefónica de Argentina</h3>
+        <p class="meta">
+          <span class="period"><span class="es">Ene 2012 – May 2014</span><span class="en">Jan 2012 – May 2014</span></span>
+          · <span class="es">Soluciones de comunicaciones integradas</span><span class="en">Integrated communications solutions</span>
+        </p>
+        <div class="es">
+          <ul>
+            <li>Responsable de los <strong>acuerdos de desarrollo con partners</strong> (Cisco, Avaya, Siemens y otros) para la reventa de soluciones de comunicaciones, infraestructura y networking.</li>
+            <li>Cumplí el presupuesto anual de ventas de <strong>USD 8 millones</strong> del segmento corporativo.</li>
+          </ul>
+        </div>
+        <div class="en">
+          <ul>
+            <li>Owned <strong>partner development agreements</strong> (Cisco, Avaya, Siemens, and others) for reselling communications, infrastructure, and networking solutions.</li>
+            <li>Delivered the segment's <strong>USD 8 million</strong> annual sales budget.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Telefonica Empresas -->
+      <div class="entry">
+        <h3><span class="es">Project Manager</span><span class="en">Project Manager</span> — Telefónica Empresas</h3>
+        <p class="meta">
+          <span class="period"><span class="es">Ene 2007 – Dic 2011</span><span class="en">Jan 2007 – Dec 2011</span></span>
+          · <span class="es">Comunicaciones e infraestructura</span><span class="en">Communications &amp; infrastructure</span>
+        </p>
+        <div class="es">
+          <p>Responsable del despliegue de proyectos de comunicaciones e infraestructura para los segmentos de Industria, Salud y Servicios. Entre los proyectos más relevantes:</p>
+        </div>
+        <div class="en">
+          <p>Responsible for delivering communications and infrastructure projects for the Industry, Healthcare, and Services segments. Selected engagements:</p>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th><span class="es">Cliente</span><span class="en">Client</span></th>
+              <th><span class="es">Alcance</span><span class="en">Scope</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="es">McDonald's</span><span class="en">McDonald's</span></td>
+              <td><span class="es">Telefonía IP e infraestructura de red en 150 locales</span><span class="en">IP telephony and networking infrastructure across 150 stores</span></td>
+            </tr>
+            <tr>
+              <td>DOT – Baires Shopping</td>
+              <td><span class="es">Telefonía IP y red para la apertura del sitio</span><span class="en">IP telephony and networking for the site opening</span></td>
+            </tr>
+            <tr>
+              <td>Carrefour</td>
+              <td><span class="es">Infraestructura de red en 200 locales de retail</span><span class="en">Networking infrastructure across 200 retail stores</span></td>
+            </tr>
+            <tr>
+              <td>MetroGas</td>
+              <td><span class="es">Red de telemetría de 400 puntos y sus sistemas de core</span><span class="en">400-point telemetry network and its core systems</span></td>
+            </tr>
+            <tr>
+              <td>Halliburton</td>
+              <td><span class="es">Despliegue de telefonía IP e infraestructura de red</span><span class="en">IP telephony and networking infrastructure deployment</span></td>
+            </tr>
+            <tr>
+              <td>Barrick Gold</td>
+              <td><span class="es">Migración de telefonía IP e infraestructura de sitio</span><span class="en">IP telephony and site infrastructure migration</span></td>
+            </tr>
+            <tr>
+              <td><span class="es">Municipalidad de Tandil</span><span class="en">Municipality of Tandil</span></td>
+              <td><span class="es">Solución de estacionamiento medido</span><span class="en">Metered parking solution</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+    <!-- ============ TECHNICAL PROJECTS ============ -->
+    <section>
+      <h2><span class="es">Proyectos técnicos propios (2025 – 2026)</span><span class="en">Independent technical projects (2025 – 2026)</span></h2>
+
+      <div class="entry">
+        <h3><span class="es">Arquitectura Hermes Agent sobre Oracle Cloud Infrastructure</span><span class="en">Hermes Agent architecture on Oracle Cloud Infrastructure</span></h3>
+        <div class="tags">
+          <span class="tag">OCI Always Free</span><span class="tag">VCN</span><span class="tag">Ampere A1 ARM</span>
+          <span class="tag">Ubuntu 24.04 LTS</span><span class="tag">OCI CLI</span><span class="tag">Docker</span>
+        </div>
+        <p class="es">Diseño y despliegue de un agente auto-hospedado sobre el free tier de OCI. Incluye el diseño de la VCN (<code>10.0.0.0/16</code>), subred pública, Internet Gateway, tabla de ruteo y security lists; el reparto del cupo gratuito (2 OCPU / 12 GB) entre dos instancias ARM con Ubuntu 24.04 LTS; autenticación por API Key de OCI y acceso SSH con clave ed25519; y la automatización del aprovisionamiento con OCI CLI. Documentado con diagramas de arquitectura y matriz de decisiones.</p>
+        <p class="en">Designed and deployed a self-hosted agent on the OCI free tier. Includes VCN design (<code>10.0.0.0/16</code>), public subnet, Internet Gateway, route table and security lists; allocation of the free quota (2 OCPU / 12 GB) across two ARM instances running Ubuntu 24.04 LTS; OCI API Key authentication and ed25519 SSH access; and OCI CLI–driven provisioning automation. Documented with architecture diagrams and a decision matrix.</p>
+      </div>
+
+      <div class="entry">
+        <h3><span class="es">Integración de pagos con Mercado Pago</span><span class="en">Mercado Pago payment integration</span></h3>
+        <div class="tags">
+          <span class="tag">Checkout Pro</span><span class="tag">Orders API</span><span class="tag">Webhooks</span>
+          <span class="tag">x-signature</span><span class="tag">OAuth 2.0 / PKCE</span><span class="tag">Marketplace</span>
+        </div>
+        <p class="es">Guía técnica de implementación propia que cubre Checkout Pro (Preferences API, <code>back_urls</code>, <code>auto_return</code>), Checkout API vía Orders (<code>X-Idempotency-Key</code>, tokenización de tarjeta), webhooks con validación de firma, transferencias salientes y payouts, y marketplace multi-vendedor con comisiones. Enfatiza el manejo seguro de credenciales (Public Key vs. Access Token) y la conciliación contra la API en lugar de confiar en el redirect del navegador.</p>
+        <p class="en">Self-authored implementation guide covering Checkout Pro (Preferences API, <code>back_urls</code>, <code>auto_return</code>), Checkout API via Orders (<code>X-Idempotency-Key</code>, card tokenization), webhooks with signature validation, outgoing transfers and payouts, and multi-seller marketplace with fees. Emphasizes secure credential handling (Public Key vs. Access Token) and reconciliation against the API rather than trusting the browser redirect.</p>
+      </div>
+
+      <div class="entry">
+        <h3><span class="es">Investigación comparativa de infraestructura y free tiers</span><span class="en">Comparative infrastructure and free-tier research</span></h3>
+        <p class="es">Informe de investigación sobre proveedores de VM y contenedores con capa gratuita, con foco en Argentina y alternativas fuera de los hyperscalers. Aplica criterios explícitos de evaluación (permanencia, recursos, administración, localidad y sostenibilidad), incluye cómputo académico (SNCAD, Clementina XXI) y un plan de combinación de piezas gratuitas.</p>
+        <p class="en">Research report on VM and container providers offering free tiers, focused on Argentina and on alternatives outside the hyperscalers. Applies explicit evaluation criteria (permanence, resources, administration, locality, sustainability), covers academic HPC access (SNCAD, Clementina XXI), and proposes a combined plan of free components.</p>
+      </div>
+
+      <div class="entry">
+        <h3><span class="es">Sitio PMaaS bilingüe y base de conocimiento PMP</span><span class="en">Bilingual PMaaS website and PMP knowledge base</span></h3>
+        <div class="tags">
+          <span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">TypeScript</span>
+          <span class="tag">Jekyll</span><span class="tag">GitHub Pages</span>
+        </div>
+        <p class="es">Sitio de servicios profesionales en Next.js + Tailwind CSS con contenido estructurado en español e inglés, y una base de conocimiento para la certificación PMP (documentos de aplicación, análisis de brechas, notas de estudio y evidencia de formación) organizada con criterios de auditabilidad.</p>
+        <p class="en">Professional services website built with Next.js + Tailwind CSS with structured Spanish/English content, plus a PMP certification knowledge base (application documents, gap analysis, study notes, and training evidence) organized for auditability.</p>
+      </div>
+
+      <div class="entry">
+        <h3><span class="es">Herramienta <code>md2pdf</code></span><span class="en"><code>md2pdf</code> tooling</span></h3>
+        <p class="es">Automatización en <strong>PowerShell</strong> que convierte Markdown a HTML autocontenido y luego a PDF usando Edge/Chrome en modo headless, con render de diagramas Mermaid. Diseñada para Windows sin privilegios de administrador y sin dependencias externas (sin pandoc, LaTeX, Python ni Node).</p>
+        <p class="en"><strong>PowerShell</strong> automation that converts Markdown to self-contained HTML and then to PDF using headless Edge/Chrome, with Mermaid diagram rendering. Built to run on Windows without administrator privileges and without external dependencies (no pandoc, LaTeX, Python, or Node).</p>
+      </div>
+
+      <div class="entry">
+        <h3><span class="es">Análisis de inversiones</span><span class="en">Investment research</span></h3>
+        <p class="es">Metodología estructurada de investigación de mercado aplicada a documentos públicos e informes: plantillas de prospecto, análisis de instrumentos y de informes bursátiles, registro de hallazgos con trazabilidad y fuentes citadas.</p>
+        <p class="en">Structured market research methodology applied to public documents and reports: prospect, instrument, and equity-report templates, plus a findings register with traceability and cited sources.</p>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section>
+      <h2><span class="es">Formación académica</span><span class="en">Education</span></h2>
+      <table>
+        <thead>
+          <tr>
+            <th><span class="es">Título / programa</span><span class="en">Degree / program</span></th>
+            <th><span class="es">Institución</span><span class="en">Institution</span></th>
+            <th><span class="es">Período</span><span class="en">Period</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="es">Ingeniero en Telecomunicaciones</span><span class="en">Telecommunications Engineer</span></td>
+            <td>Universidad Argentina de la Empresa (UADE)</td>
+            <td><span class="es">Diploma: 22/10/2015</span><span class="en">Diploma: Oct 22, 2015</span></td>
+          </tr>
+          <tr>
+            <td><span class="es">Diplomatura en Metodologías Ágiles de Gestión de Proyectos y Productos (80 h)</span><span class="en">Diploma in Agile Methodologies for Project &amp; Product Management (80 h)</span></td>
+            <td>ITBA — <span class="es">Escuela de Postgrado</span><span class="en">Graduate School</span></td>
+            <td><span class="es">Finalización: 31/10/2018</span><span class="en">Completed: Oct 31, 2018</span></td>
+          </tr>
+          <tr>
+            <td><span class="es">Posgrado en Gestión de Proyectos (90 h)</span><span class="en">Postgraduate Program in Project Management (90 h)</span></td>
+            <td><span class="es">Universidad Tecnológica Nacional — FRBA, Centro de e-Learning</span><span class="en">Universidad Tecnológica Nacional — FRBA, e-Learning Center</span></td>
+            <td><span class="es">Versión 2009</span><span class="en">2009 version</span></td>
+          </tr>
+          <tr>
+            <td><span class="es">Ingeniería Electrónica (estudios parciales)</span><span class="en">Electronic Engineering (partial studies)</span></td>
+            <td>Universidad Tecnológica Nacional</td>
+            <td>2008</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section>
+      <h2><span class="es">Certificaciones y desarrollo profesional</span><span class="en">Certifications &amp; professional development</span></h2>
+
+      <h3><span class="es">En curso</span><span class="en">In progress</span></h3>
+      <div class="es">
+        <ul>
+          <li><strong>PMP — Project Management Professional (PMI)</strong>: proceso de certificación en marcha. Elegibilidad acreditada con más de 36 meses de experiencia no solapada en liderazgo de proyectos y <strong>170 horas</strong> de formación en gestión de proyectos (ITBA 80 h + UTN 90 h).</li>
+          <li><strong>Ruta Microsoft</strong>: PL-200 (Power Platform Functional Consultant) → <strong>PL-600 (Power Platform Solution Architect)</strong>; AZ-104 (Azure Administrator) → Azure Solutions Architect Expert.</li>
+          <li><strong>Splunk</strong>: ruta de certificación Core Certified Consultant (estudio y documentación técnica).</li>
+        </ul>
+      </div>
+      <div class="en">
+        <ul>
+          <li><strong>PMP — Project Management Professional (PMI)</strong>: certification process underway. Eligibility substantiated with 36+ months of non-overlapping project leadership experience and <strong>170 hours</strong> of project management education (ITBA 80 h + UTN 90 h).</li>
+          <li><strong>Microsoft track</strong>: PL-200 (Power Platform Functional Consultant) → <strong>PL-600 (Power Platform Solution Architect)</strong>; AZ-104 (Azure Administrator) → Azure Solutions Architect Expert.</li>
+          <li><strong>Splunk</strong>: Core Certified Consultant certification track (study and technical documentation).</li>
+        </ul>
+      </div>
+
+      <h3 style="margin-top:14px;"><span class="es">Formación aplicada</span><span class="en">Applied training</span></h3>
+      <div class="es">
+        <ul>
+          <li><strong>Disciplined Agile (PMI)</strong>: estudio del marco y del Examination Content Outline de DASSM.</li>
+          <li><strong>Oracle Cloud Infrastructure</strong>: diseño e implementación de una arquitectura completa sobre el tier Always Free.</li>
+          <li><strong>Mercado Pago</strong>: integraciones de pago — Checkout Pro, Orders API, webhooks firmados y marketplace con OAuth/PKCE.</li>
+        </ul>
+      </div>
+      <div class="en">
+        <ul>
+          <li><strong>Disciplined Agile (PMI)</strong>: framework study and DASSM Examination Content Outline.</li>
+          <li><strong>Oracle Cloud Infrastructure</strong>: design and hands-on build of a complete architecture on the Always Free tier.</li>
+          <li><strong>Mercado Pago</strong>: payment integrations — Checkout Pro, Orders API, signed webhooks, and marketplace with OAuth/PKCE.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ LANGUAGES ============ -->
+    <section>
+      <h2><span class="es">Idiomas</span><span class="en">Languages</span></h2>
+      <table>
+        <thead>
+          <tr>
+            <th><span class="es">Idioma</span><span class="en">Language</span></th>
+            <th><span class="es">Nivel</span><span class="en">Level</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="es">Español</span><span class="en">Spanish</span></td>
+            <td><span class="es">Nativo</span><span class="en">Native</span></td>
+          </tr>
+          <tr>
+            <td><span class="es">Inglés</span><span class="en">English</span></td>
+            <td><span class="es">Avanzado — lectura, escritura y presentaciones técnicas</span><span class="en">Advanced — reading, writing, and technical presentations</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ============ REFERENCES ============ -->
+    <section>
+      <h2><span class="es">Referencias</span><span class="en">References</span></h2>
+      <p><span class="es">Disponibles a solicitud.</span><span class="en">Available upon request.</span></p>
+    </section>
+
+    <footer class="cv-foot">
+      <p>
+        Augusto Carlos Devesa ·
+        <a href="mailto:augustod@gmail.com">augustod@gmail.com</a> ·
+        <a href="https://www.linkedin.com/in/augustodevesa/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+      <p>
+        <span class="es">Tip: usá «Imprimir / PDF» y elegí «Guardar como PDF» para generar el archivo con formato A4.</span>
+        <span class="en">Tip: use “Print / PDF” and choose “Save as PDF” to generate an A4-formatted file.</span>
+      </p>
+    </footer>
+
+  </main>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btnEs = document.getElementById('btn-es');
+    var btnEn = document.getElementById('btn-en');
+
+    function setLang(lang) {
+      root.lang = lang;
+      btnEs.setAttribute('aria-pressed', String(lang === 'es'));
+      btnEn.setAttribute('aria-pressed', String(lang === 'en'));
+      document.title = lang === 'es'
+        ? 'Augusto Carlos Devesa — CV 2026'
+        : 'Augusto Carlos Devesa — Resume 2026';
+      try { localStorage.setItem('cv-lang', lang); } catch (e) { /* ignore */ }
+    }
+
+    btnEs.addEventListener('click', function () { setLang('es'); });
+    btnEn.addEventListener('click', function () { setLang('en'); });
+    document.getElementById('btn-print').addEventListener('click', function () { window.print(); });
+
+    var saved = null;
+    try { saved = localStorage.getItem('cv-lang'); } catch (e) { /* ignore */ }
+    var initial = saved || ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+    setLang(initial);
+  })();
+</script>
+
+</body>
+</html>
