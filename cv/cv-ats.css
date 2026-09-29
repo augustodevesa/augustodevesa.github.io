@@ -1,0 +1,75 @@
+/* ---------------------------------------------------------------------------
+   Plantilla CV ATS (cv-ats.css)
+   Se pasa a md2pdf.ps1 con -CssFile y se agrega DESPUES del CSS incluido,
+   de modo que estas reglas sobrescriben las del conversor.
+
+   Criterios de diseno (lectura por ATS / selectores de IA + revision humana):
+   - Una sola columna, sin tablas, sin cuadros de texto, sin imagenes ni iconos.
+   - Sin encabezado ni pie de pagina repetidos (el script usa --no-pdf-header-footer).
+   - Fuente estandar y tamano legible; texto siempre seleccionable.
+   - Espaciado compacto para entrar en 2 paginas sin perder palabras clave.
+   --------------------------------------------------------------------------- */
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 8.9pt;
+  line-height: 1.23;
+  color: #16191d;
+}
+
+.markdown-body { max-width: 100%; }
+
+h1 {
+  font-size: 15pt;
+  margin: 0 0 2px;
+  padding: 0;
+  border: 0;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-size: 10.2pt;
+  margin: 7px 0 3px;
+  padding: 0 0 2px;
+  border: 0;
+  border-bottom: 1px solid #b6bec7;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  page-break-after: avoid;
+}
+
+h3 {
+  font-size: 9.7pt;
+  margin: 5px 0 1px;
+  page-break-after: avoid;
+}
+
+h3 + p { margin-top: 0; }
+
+p { margin: 2px 0; }
+
+ul {
+  margin: 1px 0 4px;
+  padding-left: 14px;
+}
+
+li {
+  margin: 0;
+  page-break-inside: avoid;
+}
+
+/* Las reglas horizontales del Markdown se usan solo como separador semantico:
+   se ocultan para no consumir altura util (no ocultan texto). */
+hr { display: none; }
+
+a {
+  color: #0b5cab;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+strong { font-weight: 600; }
+
+em { color: #4a5560; }
+
+@page { size: A4; margin: 10mm 12mm 10mm; }

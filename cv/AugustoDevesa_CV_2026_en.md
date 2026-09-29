@@ -16,9 +16,9 @@ LinkedIn: [linkedin.com/in/augustodevesa](https://www.linkedin.com/in/augustodev
 
 Telecommunications Engineer with 18+ years of experience in technology and telecommunications projects, and over a decade leading projects directly. I combine senior project management —PMBOK, hybrid and agile frameworks— with genuine hands-on technical capability: systems and network integration, cloud infrastructure, automation, and web development.
 
-I led a national connectivity program covering approximately **9,700 schools** with **7,500+ delivered interventions** and peaks of **1,100 successful interventions per month**. I co-founded and managed a medical technology startup that brought a laparoscopic simulator and 3D-printed anatomical models to market. Earlier, at Telefónica, I owned the integration, launch, and operation of digital services serving **1.5 million users** at **99.5% platform availability**.
+I led a national connectivity program covering approximately **9,700 schools**, with **9,500 installation interventions** and **12,000 maintenance interventions** executed over 20 months. I co-founded and managed a medical technology startup that brought a laparoscopic simulator and 3D-printed anatomical models to market. Earlier, at Telefónica, I owned the integration, launch, and operation of digital services across five countries, serving **1.5 million users** at **99.5% platform availability**.
 
-I work fluently in Spanish and English, with a track record of coordinating interdisciplinary teams, contractors, and client counterparts across Argentina and Latin America.
+I work fluently in Spanish and English, with a track record of coordinating interdisciplinary teams, contractors, and client counterparts across Argentina, Latin America, Spain, and Israel.
 
 ---
 
@@ -54,17 +54,22 @@ Telecommunications (voice, messaging, data, IP telephony, networking) · Medical
 
 ### Senior Project Manager — OCPTECH
 
-**Aug 2022 – Mar 2025 · National school technology-floor program**
+**Aug 2022 – Present · Buenos Aires, Argentina**
+
+**Business systems integration (lead to cash) — Mar 2025 – Present**
+Responsible for business systems integration across the lead-to-cash flow.
+
+**National school technology-floor program — Aug 2022 – Mar 2025**
 *Client: Educ.Ar / Ministry of Education of Argentina*
 
-National-scale program to install and maintain Wi-Fi infrastructure across approximately 9,700 schools, targeting 700 successful interventions per month with operational, quality, contractor, and financial control.
+National-scale program to install and maintain Wi-Fi infrastructure across approximately 9,700 schools, targeting 700 successful interventions per month —exceeded during execution— and operational, quality, contractor, and financial control.
 
 - Led an interdisciplinary team of **11 coordination roles** (one controller, three infrastructure coordinators, five support desk technicians, and two operations coordinators) plus approximately **50 contractor accounts**.
 - Designed and coordinated the **hybrid delivery model**: procurement, provisioning, logistics, closure, and billing run as waterfall; intervention planning and execution run in agile cycles, each sprint delivering a batch of completed schools.
-- Delivered approximately **7,500 successful interventions**, hit the 700-per-month target, and reached a **peak of 1,100** successful interventions in a single month.
+- Executed **9,500 installation interventions** and **12,000 maintenance interventions** (21,500 in total) over 20 months of execution, averaging 1,075 interventions per month: the 700-per-month target was exceeded by more than 50%.
 - Defined every intervention as a formal deliverable under an **acceptance manual approved by both parties**, backed by contractor agreements and customer billing certifications.
 - Owned executive reporting, risk and issue management, and the operational interface with the client throughout the program.
-- Remaining planned interventions were cancelled by the client due to closed schools and errors in the official school records.
+- Remaining planned installation interventions were cancelled by the client due to closed schools and errors in the official school records.
 
 ### Co-founder & Project Manager — MedicalBit / MedicalSim
 
@@ -79,20 +84,28 @@ Development of patient-specific 3D-printed anatomical models and a low-cost lapa
 - The simulator completed demo and MVP phases for both hardware and software, with operation manuals and a production-ready product.
 - Units were sold to institutions including the **Hospital Italiano de Buenos Aires** training center, **Hospital Privado de Mar del Plata**, and the **Sociedad Argentina de Ginecología**. The product is commercialized through MedicalSim.
 
+### Project Manager — IG Networks
+
+**Apr 2019 – Dec 2020 · New, modified, and discontinued service projects**
+
+- Owned end-to-end delivery of customer service activation, modification, and deactivation projects.
+- Acted as the single point of contact for the customer and contractors, coordinating the activities of the different teams throughout the implementation period.
+
 ### Integration Engineer — Telefónica / Movistar (Novum program)
 
-**Jan 2017 – 2021 · Digital transformation**
+**Feb 2017 – Aug 2018 · Digital transformation · Argentina, Spain, Israel, and Brazil**
 
-Digital transformation program that unified Telefónica's services into a single app, targeting growth from 800K to 2.5M active users.
+Telefónica digital transformation program that unified the customer experience across its LatAm operators through the Mi Movistar app, targeting growth from 800K to 2.5M active users.
 
-- Owned the **communications pillar integration** and acted as facilitator for account, messaging, and support integrations.
-- Coordinated technical and business stakeholders, defined integration scope and dependencies, and aligned application and network platforms.
-- Managed implementation risks and issues and validated operational readiness ahead of each release.
-- Supported the user migration from miMovistar and MovistarTU into the new platform.
+- Coordinated integration activities between the **operators' core network platforms** and the **app backend**.
+- Managed diverse teams distributed across **Israel, Madrid, Brazil, and Buenos Aires**.
+- Owned the **communications pillar integration** (voice and messaging) and facilitated account and support integrations.
+- Defined integration scope and dependencies, aligned technical and business stakeholders, and managed implementation risks and issues.
+- Validated operational readiness ahead of each release and supported the user migration from miMovistar and MovistarTU into the new platform.
 
-### OB Coordinator — MovistarTU / TU Go
+### Carrier Coordinator — MovistarTU / TU Go
 
-**May 2014 – Jan 2017 · Over-the-top communications service**
+**Apr 2014 – Mar 2017 · Over-the-top communications service**
 
 Telefónica's first application allowing customers to make and receive calls and messages over internet connectivity.
 
@@ -109,7 +122,7 @@ Telefónica's first application allowing customers to make and receive calls and
 
 ### Project Manager — Telefónica Empresas
 
-**Jan 2007 – Dec 2011 · Communications and infrastructure project delivery**
+**2006 – Dec 2011 · Communications and infrastructure project delivery**
 
 Responsible for delivering communications and infrastructure projects for the Industry, Healthcare, and Services segments. Selected engagements:
 
@@ -189,9 +202,9 @@ Available upon request.
 
 <!--
 ITEMS PENDING CONFIRMATION (do not publish):
-1. End date of the Telefónica / Movistar (Novum) role. The PMP application draft lists it
-   as PENDING; "2021" was used here as the boundary consistent with MedicalBit starting
-   Jan 2021. Confirm or correct.
+1. OCPTECH activity after Mar 2025: business systems integration project (lead to cash),
+   declared by the owner on 2026-09-25. Worth expanding with scope, systems involved,
+   team, and budget once available.
 2. DASSM: the repo contains study material (ECO 2022, ChooseYourWoW 2nd ed.), not a
    certificate. Currently listed as training, not as an earned certification.
 3. Microsoft Applied Skills and Splunk: the files in the repo are track/poster documents,

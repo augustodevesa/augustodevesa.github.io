@@ -16,9 +16,9 @@ LinkedIn: [linkedin.com/in/augustodevesa](https://www.linkedin.com/in/augustodev
 
 Ingeniero en Telecomunicaciones con más de 18 años de experiencia en proyectos de tecnología y telecomunicaciones, y más de una década liderando proyectos de forma directa. Combino gestión de proyectos senior —PMBOK, marcos híbridos y ágiles— con capacidad técnica real: integración de sistemas y redes, infraestructura cloud, automatización y desarrollo web.
 
-Lideré un programa nacional de conectividad en aproximadamente **9.700 escuelas** con más de **7.500 intervenciones entregadas** y picos de **1.100 intervenciones exitosas por mes**. Cofundé y gestioné una startup de tecnología médica que llevó al mercado un simulador laparoscópico y modelos anatómicos impresos en 3D. Antes, en Telefónica, fui responsable de integración, lanzamiento y operación de servicios digitales con **1,5 millones de usuarios** y **99,5 % de disponibilidad**.
+Lideré un programa nacional de conectividad en aproximadamente **9.700 escuelas**, con **9.500 intervenciones de instalación** y **12.000 de mantenimiento** ejecutadas en 20 meses. Cofundé y gestioné una startup de tecnología médica que llevó al mercado un simulador laparoscópico y modelos anatómicos impresos en 3D. Antes, en Telefónica, fui responsable de integración, lanzamiento y operación de servicios digitales en cinco países, con **1,5 millones de usuarios** y **99,5 % de disponibilidad**.
 
-Trabajo indistintamente en español e inglés, con experiencia coordinando equipos interdisciplinarios, contratistas y contrapartes de cliente en Argentina y Latinoamérica.
+Trabajo indistintamente en español e inglés, con experiencia coordinando equipos interdisciplinarios, contratistas y contrapartes de cliente en Argentina, Latinoamérica, España e Israel.
 
 ---
 
@@ -54,17 +54,22 @@ Telecomunicaciones (voz, mensajería, datos, telefonía IP, networking) · Tecno
 
 ### Senior Project Manager — OCPTECH
 
-**Ago 2022 – Mar 2025 · Programa nacional de pisos tecnológicos escolares**
+**Ago 2022 – actualidad · Buenos Aires, Argentina**
+
+**Integración de sistemas de negocio (lead to cash) — Mar 2025 – actualidad**
+Responsable de la integración de sistemas de negocio a lo largo del flujo lead to cash.
+
+**Programa nacional de pisos tecnológicos escolares — Ago 2022 – Mar 2025**
 *Cliente: Educ.Ar / Ministerio de Educación de la República Argentina*
 
-Programa de escala nacional para instalar y mantener infraestructura Wi-Fi en aproximadamente 9.700 escuelas, con una meta de 700 intervenciones exitosas por mes y control operativo, de calidad, de contratistas y financiero.
+Programa de escala nacional para instalar y mantener infraestructura Wi-Fi en aproximadamente 9.700 escuelas, con una meta de 700 intervenciones exitosas por mes —superada durante la ejecución— y control operativo, de calidad, de contratistas y financiero.
 
 - Dirigí un equipo interdisciplinario de **11 roles de coordinación** (un controller, tres coordinadores de infraestructura, cinco técnicos de mesa de soporte y dos coordinadores de operaciones) y aproximadamente **50 cuentas de contratistas**.
 - Diseñé y coordiné el **modelo de entrega híbrido**: compras, aprovisionamiento, logística, cierre y facturación por waterfall; planificación y ejecución de intervenciones en ciclos ágiles, cada sprint entregando lotes de escuelas completadas.
-- Se completaron aproximadamente **7.500 intervenciones exitosas**; se alcanzó la meta de 700 mensuales y un **pico de 1.100** intervenciones exitosas en un mes.
+- Se ejecutaron **9.500 intervenciones de instalación** y **12.000 de mantenimiento** (21.500 en total) en 20 meses de ejecución, con un promedio de 1.075 por mes: la meta de 700 intervenciones exitosas por mes se superó en más del 50 %.
 - Definí cada intervención como entregable formal bajo un **manual de aceptación aprobado por ambas partes**, con certificaciones de facturación y acuerdos de contratistas como evidencia.
 - Sostuve el reporting ejecutivo, la gestión de riesgos e issues y la interfaz operativa con el cliente durante todo el programa.
-- Las intervenciones restantes fueron canceladas por el cliente por escuelas cerradas o inconsistencias en el registro oficial.
+- Las intervenciones de instalación restantes fueron canceladas por el cliente por escuelas cerradas o inconsistencias en el registro oficial.
 
 ### Cofundador y Project Manager — MedicalBit / MedicalSim
 
@@ -79,20 +84,28 @@ Desarrollo de modelos anatómicos específicos de paciente impresos en 3D y de u
 - El simulador completó fases de demo y MVP de hardware y software, con manuales de operación y producto listo para producción.
 - Se vendieron unidades a instituciones como el centro de entrenamiento del **Hospital Italiano de Buenos Aires**, el **Hospital Privado de Mar del Plata** y la **Sociedad Argentina de Ginecología**. El producto se comercializa a través de MedicalSim.
 
+### Project Manager — IG Networks
+
+**Abr 2019 – Dic 2020 · Proyectos de alta, baja y modificación de servicios**
+
+- Responsable de la ejecución completa de los proyectos de alta, baja y modificación de los servicios de los clientes.
+- Único punto de contacto del cliente y de los contratistas para la coordinación de las actividades de los distintos equipos durante el período de implementación del proyecto.
+
 ### Integration Engineer — Telefónica / Movistar (programa Novum)
 
-**Ene 2017 – 2021 · Transformación digital**
+**Feb 2017 – Ago 2018 · Transformación digital · Argentina, España, Israel y Brasil**
 
-Programa de transformación digital que unificó los servicios de Telefónica en una única aplicación, con el objetivo de pasar de 800 mil a 2,5 millones de usuarios activos.
+Programa de transformación digital de Telefónica que unificó la experiencia de cliente entre las distintas operadoras de Latam a través de la app Mi Movistar, con el objetivo de pasar de 800 mil a 2,5 millones de usuarios activos.
 
-- Responsable de la integración del **pilar de comunicaciones** y facilitador de las integraciones de cuentas, mensajería y soporte.
-- Coordiné stakeholders técnicos y de negocio, definí alcance y dependencias de integración y alineé las plataformas de aplicación y de red.
-- Gestioné riesgos e issues de implementación y validé la readiness operativa antes de cada liberación.
-- Acompañé la migración de usuarios desde miMovistar y MovistarTU hacia la nueva plataforma.
+- Coordiné las actividades de integración entre las **plataformas de core de red de las operadoras** y el **backend de la aplicación**.
+- Gestioné equipos diversos y distribuidos entre **Israel, Madrid, Brasil y Buenos Aires**.
+- Responsable de la integración del **pilar de comunicaciones** (voz y mensajería) y facilitador de las integraciones de cuentas y soporte.
+- Definí el alcance y las dependencias de integración, alineé a los stakeholders técnicos y de negocio y gestioné los riesgos e issues de implementación.
+- Validé la readiness operativa antes de cada liberación y acompañé la migración de usuarios desde miMovistar y MovistarTU hacia la nueva plataforma.
 
-### OB Coordinator — MovistarTU / TU Go
+### Coordinador de Operadoras — MovistarTU / TU Go
 
-**May 2014 – Ene 2017 · Servicio de comunicaciones over-the-top**
+**Abr 2014 – Mar 2017 · Servicio de comunicaciones over-the-top**
 
 Primera aplicación de Telefónica que permitía a los clientes realizar y recibir llamadas y mensajes usando conectividad de internet.
 
@@ -109,7 +122,7 @@ Primera aplicación de Telefónica que permitía a los clientes realizar y recib
 
 ### Project Manager — Telefónica Empresas
 
-**Ene 2007 – Dic 2011 · Despliegue de proyectos de comunicaciones e infraestructura**
+**2006 – Dic 2011 · Despliegue de proyectos de comunicaciones e infraestructura**
 
 Responsable del despliegue de proyectos de comunicaciones e infraestructura para los segmentos de Industria, Salud y Servicios. Entre los proyectos más relevantes:
 
@@ -189,9 +202,9 @@ Disponibles a solicitud.
 
 <!--
 PENDIENTES DE CONFIRMACIÓN (no publicar):
-1. Fecha de finalización del rol en Telefónica / Movistar (Novum). El borrador de la
-   aplicación PMP deja el end date como PENDIENTE; aquí se usó "2021" como límite
-   coherente con el inicio de MedicalBit (Ene 2021). Confirmar o corregir.
+1. Actividad en OCPTECH posterior a Mar 2025: proyecto de integración de sistemas de
+   negocio (lead to cash), declarado por el titular el 2026-09-25. Conviene ampliarlo con
+   alcance, sistemas involucrados, equipo y presupuesto cuando estén disponibles.
 2. DASSM: en el repo hay documentos de estudio (ECO 2022, ChooseYourWoW 2nd ed.),
    no un certificado. Hoy figura como formación, no como certificación obtenida.
 3. Microsoft Applied Skills y Splunk: los archivos presentes en el repo son
