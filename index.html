@@ -1,75 +1,835 @@
----
-layout: default
----
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta charset="utf-8">
-	<title>Augusto Web Page </title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Augusto Devesa — Project Manager Senior | Integración, Cloud y Operaciones</title>
+<meta name="description" content="Project Manager Senior en Buenos Aires. Más de 18 años en proyectos de tecnología y más de una década liderando: integración de sistemas y redes, cloud, automatización y operaciones a escala nacional.">
+<meta name="author" content="Augusto Carlos Devesa">
+<meta name="theme-color" content="#08131f">
+<link rel="canonical" href="https://augustodevesa.github.io/">
 
+<!-- Open Graph / social -->
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Augusto Devesa">
+<meta property="og:title" content="Augusto Devesa — Project Manager Senior">
+<meta property="og:description" content="Integro tecnología, equipos y operaciones para entregar proyectos complejos a escala. Integración de sistemas, cloud y automatización.">
+<meta property="og:url" content="https://augustodevesa.github.io/">
+<meta property="og:image" content="https://augustodevesa.github.io/CV_web/Selfie2026.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Augusto Devesa — Project Manager Senior">
+<meta name="twitter:description" content="Integro tecnología, equipos y operaciones para entregar proyectos complejos a escala.">
+<meta name="twitter:image" content="https://augustodevesa.github.io/CV_web/Selfie2026.jpg">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Augusto Carlos Devesa",
+  "jobTitle": "Project Manager Senior",
+  "url": "https://augustodevesa.github.io/",
+  "image": "https://augustodevesa.github.io/CV_web/Selfie2026.jpg",
+  "email": "mailto:augustod@gmail.com",
+  "telephone": "+54-9-11-3854-3260",
+  "address": { "@type": "PostalAddress", "addressLocality": "Buenos Aires", "addressCountry": "AR" },
+  "knowsLanguage": ["es", "en"],
+  "sameAs": ["https://www.linkedin.com/in/augustodevesa/"],
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Universidad Argentina de la Empresa (UADE)" },
+    { "@type": "CollegeOrUniversity", "name": "ITBA — Escuela de Postgrado" }
+  ],
+  "knowsAbout": ["Gestión de proyectos", "PMBOK", "Integración de sistemas", "Oracle Cloud Infrastructure", "Automatización", "Operaciones"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #08131f;
+    --bg-soft: #0b1a29;
+    --surface: rgba(255, 255, 255, .045);
+    --surface-2: rgba(255, 255, 255, .07);
+    --border: rgba(255, 255, 255, .09);
+    --border-strong: rgba(255, 255, 255, .16);
+    --text: #e9f0f6;
+    --muted: #93a6b7;
+    --turquesa: #2ec6c6;
+    --verde: #82d95e;
+    --azul: #46a8dd;
+    --grad: linear-gradient(135deg, #2ec6c6 0%, #46a8dd 45%, #82d95e 100%);
+    --sombra: 0 24px 70px rgba(0, 0, 0, .45);
+    --radio: 22px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: "Manrope", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { text-decoration: none; color: inherit; }
+
+  .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+
+  /* language switch */
+  html[lang="en"] .es { display: none !important; }
+  html[lang="es"] .en { display: none !important; }
+
+  /* ---------- top bar ---------- */
+  .topbar {
+    background: rgba(255, 255, 255, .03);
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12.5px;
+    letter-spacing: .02em;
+    text-align: center;
+    padding: 9px 15px;
+  }
+  .topbar b { color: var(--turquesa); font-weight: 700; }
+
+  /* ---------- header ---------- */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8, 19, 31, .82);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav {
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .brand { display: flex; align-items: center; gap: 12px; font-size: 19px; font-weight: 800; letter-spacing: -.01em; }
+  .brand img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-strong); }
+  .brand span { color: var(--text); }
+  .brand span strong { color: var(--turquesa); }
+
+  nav ul { display: flex; align-items: center; gap: 26px; list-style: none; }
+  nav a { color: var(--muted); font-size: 14px; font-weight: 600; transition: color .2s ease; }
+  nav a:hover { color: var(--text); }
+
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+
+  .lang-toggle { display: flex; gap: 4px; padding: 3px; border: 1px solid var(--border); border-radius: 999px; }
+  .lang-toggle button {
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 11px;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all .2s ease;
+  }
+  .lang-toggle button[aria-pressed="true"] { background: var(--grad); color: #06121e; }
+
+  /* ---------- buttons ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border-radius: 999px;
+    padding: 13px 22px;
+    font-weight: 700;
+    font-size: 14.5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease;
+  }
+  .btn svg { width: 18px; height: 18px; }
+  .btn-primary { color: #06121e; background: var(--grad); box-shadow: 0 14px 30px rgba(46, 198, 198, .25); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 38px rgba(46, 198, 198, .34); }
+  .btn-outline { color: var(--text); border-color: var(--border-strong); background: rgba(255, 255, 255, .03); }
+  .btn-outline:hover { border-color: var(--turquesa); background: rgba(46, 198, 198, .08); }
+
+  /* ---------- eyebrow ---------- */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--turquesa);
+    background: rgba(46, 198, 198, .1);
+    border: 1px solid rgba(46, 198, 198, .22);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--verde); }
+
+  /* ---------- hero ---------- */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: 92px 0 80px;
+    background:
+      radial-gradient(circle at 82% 18%, rgba(46, 198, 198, .16), transparent 30%),
+      radial-gradient(circle at 8% 6%, rgba(70, 168, 221, .14), transparent 34%),
+      radial-gradient(circle at 50% 120%, rgba(130, 217, 94, .08), transparent 40%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.02fr .98fr; gap: 60px; align-items: center; }
+
+  h1 {
+    margin-top: 22px;
+    font-size: clamp(34px, 4.2vw, 54px);
+    line-height: 1.1;
+    letter-spacing: -.035em;
+    color: #f4f8fb;
+  }
+  .grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  .hero-copy { margin-top: 24px; max-width: 640px; font-size: 18px; color: var(--muted); }
+
+  .hero-actions { margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap; }
+
+  .hero-points { margin-top: 34px; display: flex; gap: 12px 22px; flex-wrap: wrap; color: var(--muted); font-size: 13.5px; font-weight: 600; }
+  .hero-points span { display: inline-flex; align-items: center; gap: 7px; }
+  .hero-points span::before {
+    content: "";
+    width: 18px; height: 18px; border-radius: 50%;
+    background: rgba(130, 217, 94, .16);
+    border: 1px solid rgba(130, 217, 94, .5);
+    box-shadow: inset 0 0 0 4px rgba(130, 217, 94, .35);
+  }
+
+  /* portrait + orbit */
+  .hero-visual { display: grid; place-items: center; }
+  .portrait-wrap { position: relative; width: min(520px, 100%); aspect-ratio: 1; display: grid; place-items: center; }
+
+  .portrait-ring {
+    position: absolute; inset: 6%;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    box-shadow: 0 0 0 34px rgba(46, 198, 198, .035), 0 0 0 68px rgba(70, 168, 221, .022);
+  }
+
+  .portrait {
+    position: relative;
+    z-index: 3;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, .1);
+    box-shadow: var(--sombra);
+  }
+
+  .orbit-tag {
+    position: absolute;
+    z-index: 4;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: rgba(11, 26, 41, .92);
+    border: 1px solid var(--border-strong);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .4);
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+    backdrop-filter: blur(8px);
+  }
+  .orbit-tag i { font-style: normal; color: var(--turquesa); margin-right: 6px; }
+  .t1 { top: 2%;  left: 50%; transform: translateX(-50%); }
+  .t2 { top: 20%; right: -4%; }
+  .t3 { top: 55%; right: -6%; }
+  .t4 { bottom: 2%; left: 50%; transform: translateX(-50%); }
+  .t5 { top: 55%; left: -6%; }
+  .t6 { top: 20%; left: -4%; }
+
+  /* ---------- stats ---------- */
+  .stats { padding: 8px 0 0; }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: var(--radio);
+    padding: 26px 18px;
+  }
+  .stat { text-align: center; padding: 8px 10px; border-right: 1px solid var(--border); }
+  .stat:last-child { border-right: none; }
+  .stat b { display: block; font-size: clamp(26px, 3vw, 36px); line-height: 1.1; letter-spacing: -.03em; }
+  .stat b span { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .stat small { display: block; margin-top: 6px; color: var(--muted); font-size: 12.5px; font-weight: 600; }
+
+  /* ---------- sections ---------- */
+  section { padding: 92px 0; }
+  .section-head { max-width: 760px; margin: 0 auto 52px; text-align: center; }
+  .section-head h2 { margin-top: 16px; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.15; letter-spacing: -.03em; color: #f4f8fb; }
+  .section-head p { margin-top: 16px; color: var(--muted); font-size: 17px; }
+
+  /* ---------- service cards ---------- */
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+  .card {
+    position: relative;
+    overflow: hidden;
+    padding: 32px;
+    border-radius: var(--radio);
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.02));
+    transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  }
+  .card::after {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(circle at 100% 0%, rgba(46,198,198,.14), transparent 42%);
+    opacity: 0; transition: opacity .25s ease; pointer-events: none;
+  }
+  .card:hover { transform: translateY(-6px); border-color: rgba(46, 198, 198, .35); box-shadow: var(--sombra); }
+  .card:hover::after { opacity: 1; }
+
+  .card-icon {
+    width: 56px; height: 56px; display: grid; place-items: center;
+    border-radius: 16px; margin-bottom: 22px;
+    color: var(--turquesa);
+    background: rgba(46, 198, 198, .1);
+    border: 1px solid rgba(46, 198, 198, .22);
+  }
+  .card-icon svg { width: 27px; height: 27px; }
+  .card h3 { font-size: 22px; line-height: 1.25; color: #f4f8fb; }
+  .card p { margin-top: 12px; color: var(--muted); font-size: 15px; }
+  .card ul { list-style: none; margin-top: 20px; display: grid; gap: 9px; }
+  .card li { color: var(--muted); font-size: 14px; padding-left: 22px; position: relative; }
+  .card li::before { content: ""; position: absolute; left: 0; top: 9px; width: 7px; height: 7px; border-radius: 50%; background: var(--verde); }
+
+  /* ---------- experience ---------- */
+  .experience { background: linear-gradient(180deg, var(--bg-soft), var(--bg)); }
+  .timeline { position: relative; display: grid; gap: 20px; }
+  .timeline::before { content: ""; position: absolute; left: 21px; top: 10px; bottom: 10px; width: 2px; background: linear-gradient(180deg, var(--turquesa), rgba(70,168,221,.15)); }
+  .job {
+    position: relative;
+    margin-left: 58px;
+    padding: 26px 30px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    transition: border-color .25s ease, transform .25s ease;
+  }
+  .job:hover { border-color: rgba(46, 198, 198, .32); transform: translateX(4px); }
+  .job::before {
+    content: ""; position: absolute; left: -45px; top: 30px;
+    width: 18px; height: 18px; border-radius: 50%;
+    background: var(--bg);
+    border: 3px solid var(--turquesa);
+    box-shadow: 0 0 0 5px rgba(46, 198, 198, .12);
+  }
+  .job h3 { font-size: 20px; color: #f4f8fb; }
+  .job h3 span { color: var(--turquesa); font-weight: 700; }
+  .job .meta { margin-top: 5px; color: var(--muted); font-size: 13.5px; font-weight: 600; }
+  .job p { margin-top: 12px; color: var(--muted); font-size: 15px; }
+  .chips { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font-size: 12.5px; font-weight: 700; padding: 5px 12px; border-radius: 999px; color: #cfe9f2; background: rgba(70, 168, 221, .12); border: 1px solid rgba(70, 168, 221, .25); }
+
+  .credentials { margin-top: 40px; padding: 26px 30px; border-radius: 18px; border: 1px dashed var(--border-strong); background: rgba(255,255,255,.02); }
+  .credentials h3 { font-size: 14px; text-transform: uppercase; letter-spacing: .1em; color: var(--turquesa); }
+
+  /* ---------- notes ---------- */
+  .notes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .note {
+    display: flex; flex-direction: column;
+    padding: 28px; border-radius: var(--radio);
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.015));
+    transition: transform .25s ease, border-color .25s ease;
+  }
+  .note:hover { transform: translateY(-5px); border-color: rgba(70, 168, 221, .35); }
+  .note .tag { align-self: flex-start; font-size: 11.5px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--verde); background: rgba(130,217,94,.1); border: 1px solid rgba(130,217,94,.25); padding: 5px 11px; border-radius: 999px; }
+  .note h3 { margin-top: 18px; font-size: 19px; line-height: 1.3; color: #f4f8fb; }
+  .note p { margin-top: 12px; color: var(--muted); font-size: 14.5px; }
+  .note .soon { margin-top: auto; padding-top: 20px; color: var(--muted); font-size: 13px; font-weight: 700; opacity: .8; }
+
+  /* ---------- CTA / contact ---------- */
+  .cta { padding: 20px 0 96px; }
+  .cta-box {
+    position: relative; overflow: hidden;
+    padding: 60px;
+    border-radius: 30px;
+    border: 1px solid var(--border-strong);
+    background:
+      radial-gradient(circle at 88% 8%, rgba(130, 217, 94, .22), transparent 30%),
+      radial-gradient(circle at 4% 100%, rgba(70, 168, 221, .2), transparent 34%),
+      linear-gradient(135deg, rgba(46,198,198,.16), rgba(11,26,41,.6));
+    display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;
+  }
+  .cta-box h2 { font-size: clamp(28px, 3.4vw, 42px); line-height: 1.12; letter-spacing: -.03em; color: #f4f8fb; }
+  .cta-box p { margin-top: 15px; max-width: 560px; color: var(--muted); font-size: 16.5px; }
+  .cta-actions { display: flex; flex-direction: column; gap: 12px; min-width: 260px; }
+  .cta-actions .btn { width: 100%; }
+  .cta-links { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 6px; }
+  .cta-links a { color: var(--muted); font-size: 14px; font-weight: 700; border-bottom: 1px solid transparent; transition: .2s ease; }
+  .cta-links a:hover { color: var(--turquesa); border-color: var(--turquesa); }
+
+  /* ---------- footer ---------- */
+  footer { border-top: 1px solid var(--border); background: #060f19; padding: 58px 0 30px; }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 44px; }
+  .footer-brand { display: flex; align-items: center; gap: 13px; font-size: 20px; font-weight: 800; }
+  .footer-brand img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-strong); }
+  .footer-brand span strong { color: var(--turquesa); }
+  footer p, footer li, footer a { color: var(--muted); font-size: 14px; }
+  footer a:hover { color: var(--text); }
+  footer h4 { font-size: 13px; text-transform: uppercase; letter-spacing: .1em; color: var(--text); margin-bottom: 16px; }
+  footer ul { list-style: none; display: grid; gap: 10px; }
+  .footer-bottom { margin-top: 44px; padding-top: 22px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 13px; }
+
+  .mobile-toggle { display: none; border: none; background: transparent; font-size: 24px; color: var(--text); cursor: pointer; }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 980px) {
+    nav {
+      position: absolute; top: 100%; left: 0; width: 100%;
+      background: rgba(8, 19, 31, .98);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, .5);
+      transform: translateY(-12px); opacity: 0; visibility: hidden; pointer-events: none;
+      transition: .25s ease;
+    }
+    nav.open { transform: translateY(0); opacity: 1; visibility: visible; pointer-events: auto; }
+    nav ul { flex-direction: column; align-items: stretch; gap: 0; padding: 14px 22px 20px; }
+    nav a { display: block; padding: 14px 4px; border-bottom: 1px solid var(--border); }
+    nav li:last-child a { border-bottom: none; }
+    .mobile-toggle { display: block; }
+    .nav > .btn { display: none; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { order: -1; }
+    .portrait { width: 250px; height: 250px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat:nth-child(2) { border-right: none; }
+    .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--border); padding-bottom: 18px; }
+    .stat:nth-child(3), .stat:nth-child(4) { padding-top: 18px; }
+    .cards, .notes-grid { grid-template-columns: 1fr 1fr; }
+    .cta-box { grid-template-columns: 1fr; }
+    .cta-actions { flex-direction: row; flex-wrap: wrap; min-width: 0; }
+    .cta-actions .btn { width: auto; flex: 1 1 auto; }
+  }
+
+  @media (max-width: 720px) {
+    .container { width: min(100% - 28px, 1180px); }
+    .hero { padding-top: 60px; }
+    .hero-actions .btn { width: 100%; }
+    .portrait-wrap { aspect-ratio: auto; padding: 10px 0 0; }
+    .portrait-ring, .orbit-tag { display: none; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    section { padding: 68px 0; }
+    .cards, .notes-grid { grid-template-columns: 1fr; }
+    .job { margin-left: 42px; padding: 22px; }
+    .timeline::before { left: 14px; }
+    .job::before { left: -37px; width: 15px; height: 15px; }
+    .cta-box { padding: 34px 24px; }
+    .cta-actions { flex-direction: column; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; }
+  }
+</style>
 </head>
 <body>
-	<header>
-    <h1>TEST PAGE para jugar un poco</h1>
-  <p>
-    This is the main code
-    <a href="www.google.com">ir a goole</a>
-    <a href = "www.wikipedia.org">wikipedia.org</a>
-    <a href = "IMG_dali.jpg">My dog</a> chews socks.
-  </p>
-  <p>
-    <a href="cv/"><strong>Curr&iacute;culum Vitae (CV) &mdash; ES / EN</strong></a>
-  </p>
-  <br>
-	</header>
-	<main>
 
-    <div class="posts">
-      {% for post in site.posts %}
-        <article class="post">
+<div class="topbar">
+  <span class="es"><b>Project Manager Senior</b> · Disponible para nuevos desafíos</span>
+  <span class="en"><b>Senior Project Manager</b> · Open to new challenges</span>
+</div>
 
-          <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#inicio">
+      <img src="CV_web/Selfie2026.jpg" alt="Foto de Augusto Devesa">
+      <span>Augusto<strong>Devesa</strong></span>
+    </a>
 
-          <div class="entry">
-            {{ post.excerpt }}
-          </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#servicios"><span class="es">Servicios</span><span class="en">Services</span></a></li>
+        <li><a href="#experiencia"><span class="es">Experiencia</span><span class="en">Experience</span></a></li>
+        <li><a href="#notas"><span class="es">Notas</span><span class="en">Notes</span></a></li>
+        <li><a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a></li>
+      </ul>
+    </nav>
 
-          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-        </article>
-      {% endfor %}
+    <div class="nav-right">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" id="btn-es" aria-pressed="true">ES</button>
+        <button type="button" id="btn-en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-primary" href="#contacto"><span class="es">Hablemos</span><span class="en">Let's talk</span></a>
+      <button class="mobile-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menú">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Project Management · Technology · Delivery</span>
+        <h1>
+          <span class="es">Project Manager Senior. <span class="grad">Tecnología, equipos y operaciones para entregar a escala.</span></span>
+          <span class="en">Senior Project Manager. <span class="grad">Technology, teams, and operations to deliver at scale.</span></span>
+        </h1>
+        <p class="hero-copy">
+          <span class="es">Ingeniero en Telecomunicaciones con más de 18 años en proyectos de tecnología y más de una década liderando de forma directa. Combino gestión senior —PMBOK, marcos híbridos y ágiles— con capacidad técnica real: integración de sistemas y redes, cloud, automatización y desarrollo.</span>
+          <span class="en">Telecommunications Engineer with 18+ years in technology projects and over a decade leading them directly. I combine senior management —PMBOK, hybrid and agile frameworks— with genuine hands-on capability: systems and network integration, cloud, automation, and development.</span>
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#experiencia"><span class="es">Ver trayectoria</span><span class="en">View experience</span></a>
+          <a class="btn btn-outline" href="cv/"><span class="es">Ver CV completo</span><span class="en">View full résumé</span></a>
+        </div>
+        <div class="hero-points">
+          <span><span class="es">18+ años en tecnología</span><span class="en">18+ years in technology</span></span>
+          <span><span class="es">9.700 escuelas conectadas</span><span class="en">9,700 schools connected</span></span>
+          <span><span class="es">ES / EN</span><span class="en">ES / EN</span></span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-wrap">
+          <div class="portrait-ring"></div>
+          <img class="portrait" src="CV_web/Selfie2026.jpg" alt="Augusto Devesa — Project Manager Senior">
+          <div class="orbit-tag t1"><i>&#9679;</i>PMBOK &amp; Híbrido</div>
+          <div class="orbit-tag t2"><i>&#9679;</i><span class="es">Integración</span><span class="en">Integration</span></div>
+          <div class="orbit-tag t3"><i>&#9679;</i>Cloud &amp; OCI</div>
+          <div class="orbit-tag t4"><i>&#9679;</i><span class="es">Automatización</span><span class="en">Automation</span></div>
+          <div class="orbit-tag t5"><i>&#9679;</i><span class="es">Operaciones</span><span class="en">Operations</span></div>
+          <div class="orbit-tag t6"><i>&#9679;</i>Stakeholders</div>
+        </div>
+      </div>
     </div>
 
-		<!--- video src= "https://www.youtube.com/embed/a-BOSpxYJ9M" frameborder="0" allow="autoplay; encrypted-media" width="25%" autoplay controls>your browser does not support the
-			<code> video </code>
+    <div class="container stats" style="margin-top:56px;">
+      <div class="stats-grid">
+        <div class="stat"><b><span>18+</span></b><small><span class="es">Años en tecnología</span><span class="en">Years in technology</span></small></div>
+        <div class="stat"><b><span>21.500</span></b><small><span class="es">Intervenciones ejecutadas</span><span class="en">Interventions executed</span></small></div>
+        <div class="stat"><b><span>9.700</span></b><small><span class="es">Escuelas conectadas</span><span class="en">Schools connected</span></small></div>
+        <div class="stat"><b><span>1,5 M</span></b><small><span class="es">Usuarios alcanzados</span><span class="en">Users reached</span></small></div>
+      </div>
+    </div>
+  </section>
 
-		</video-->
-		<br>
-		<iframe width="50%" src="https://www.youtube.com/embed/a-BOSpxYJ9M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		<br/>
+  <!-- ================= SERVICIOS ================= -->
+  <section id="servicios">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow"><span class="es">Qué puedo aportar</span><span class="en">What I bring</span></span>
+        <h2><span class="es">Gestión senior con capacidad técnica real</span><span class="en">Senior management with real technical depth</span></h2>
+        <p><span class="es">Combino la disciplina de la dirección de proyectos con la experiencia de haber construido y operado la tecnología. Cuatro frentes en los que puedo aportar valor desde el primer día.</span><span class="en">I combine the discipline of project management with the experience of having built and operated the technology. Four areas where I can add value from day one.</span></p>
+      </div>
 
-		<!-- audio src= "https://soundcloud.com/classicsandjazz/sets/keith-jarrett-charlie-haden-paul-motian-hamburg-72" controls>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3><span class="es">Gestión de proyectos de punta a punta</span><span class="en">End-to-end project management</span></h3>
+          <p><span class="es">Desde la estrategia y el plan hasta el cierre, con foco en resultados, transparencia y control.</span><span class="en">From strategy and plan through closure, focused on outcomes, transparency, and control.</span></p>
+          <ul>
+            <li><span class="es">Planificación, alcance y líneas base</span><span class="en">Planning, scope, and baselines</span></li>
+            <li><span class="es">Riesgos, issues y control de cambios</span><span class="en">Risk, issues, and change control</span></li>
+            <li><span class="es">Gobierno y reporting ejecutivo</span><span class="en">Governance and executive reporting</span></li>
+            <li><span class="es">Presupuesto y trazabilidad por entregable</span><span class="en">Budget and per-deliverable traceability</span></li>
+          </ul>
+        </article>
 
-		</audio--->
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9.5 14.5 14.5 9.5"/><path d="M7 12 4.8 14.2a3.5 3.5 0 0 0 5 5L12 17"/><path d="M17 12l2.2-2.2a3.5 3.5 0 0 0-5-5L12 7"/></svg>
+          </div>
+          <h3><span class="es">Integración de sistemas y redes</span><span class="en">Systems &amp; network integration</span></h3>
+          <p><span class="es">Conecto plataformas, servicios y contrapartes técnicas para que la solución funcione de verdad.</span><span class="en">I connect platforms, services, and technical counterparts so the solution actually works.</span></p>
+          <ul>
+            <li><span class="es">Voz, mensajería, datos y Wi-Fi</span><span class="en">Voice, messaging, data, and Wi-Fi</span></li>
+            <li>APIs REST, webhooks <span class="es">y validación de firmas</span><span class="en">and signature validation</span></li>
+            <li>OAuth 2.0 / PKCE · <span class="es">idempotencia y reintentos</span><span class="en">idempotency and retries</span></li>
+            <li><span class="es">Pasarelas de pago (Mercado Pago)</span><span class="en">Payment gateways (Mercado Pago)</span></li>
+          </ul>
+        </article>
 
-		<!-- table width="50%" border="2">
-			<tr><th rowspan="2">row 1</th><th> row 2</th> <th> Row3 </th> </td></tr>
-			<tr><td colspan="2"> One </td> <td> two </td> <td> three</td></tr>
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 18a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 17 10.5a3.5 3.5 0 0 1-.5 7H7z"/></svg>
+          </div>
+          <h3><span class="es">Cloud e infraestructura</span><span class="en">Cloud &amp; infrastructure</span></h3>
+          <p><span class="es">Diseño y despliegue de arquitecturas en la nube, con foco en simplicidad, costo y sostenibilidad.</span><span class="en">Design and deployment of cloud architectures, focused on simplicity, cost, and sustainability.</span></p>
+          <ul>
+            <li>Oracle Cloud Infrastructure (OCI)</li>
+            <li><span class="es">Cómputo ARM Ampere A1 · Ubuntu LTS</span><span class="en">ARM Ampere A1 compute · Ubuntu LTS</span></li>
+            <li><span class="es">Redes VCN, subredes y security lists</span><span class="en">VCN, subnets, and security lists</span></li>
+            <li>Docker · <span class="es">automatización con OCI CLI</span><span class="en">OCI CLI automation</span></li>
+          </ul>
+        </article>
 
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 9-3 3 3 3"/><path d="m16 9 3 3-3 3"/><path d="M14 6l-4 12"/></svg>
+          </div>
+          <h3><span class="es">Datos y automatización</span><span class="en">Data &amp; automation</span></h3>
+          <p><span class="es">Automatizo procesos repetitivos y genero información confiable para decidir mejor.</span><span class="en">I automate repetitive processes and produce reliable information for better decisions.</span></p>
+          <ul>
+            <li><span class="es">Automatización en PowerShell</span><span class="en">PowerShell automation</span></li>
+            <li>Markdown &rarr; HTML &rarr; PDF <span class="es">headless</span><span class="en">headless</span></li>
+            <li><span class="es">SQL, SQLite y modelado relacional</span><span class="en">SQL, SQLite, and relational modeling</span></li>
+            <li><span class="es">Python para integraciones y scripting</span><span class="en">Python for integrations and scripting</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <!-- ================= EXPERIENCIA ================= -->
+  <section class="experience" id="experiencia">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow"><span class="es">Trayectoria</span><span class="en">Track record</span></span>
+        <h2><span class="es">Más de una década liderando proyectos de tecnología</span><span class="en">Over a decade leading technology projects</span></h2>
+        <p><span class="es">Programas nacionales, integración de servicios digitales a escala regional y una startup de tecnología médica llevada al mercado.</span><span class="en">National programs, regional-scale digital service integration, and a medical technology startup taken to market.</span></p>
+      </div>
 
-		</table-->
+      <div class="timeline">
 
+        <article class="job">
+          <h3>Senior Project Manager — <span>OCPTECH</span></h3>
+          <p class="meta"><span class="es">Ago 2022 – Mar 2025 · Programa nacional de pisos tecnológicos escolares · Cliente: Educ.Ar / Ministerio de Educación</span><span class="en">Aug 2022 – Mar 2025 · National school technology-floor program · Client: Educ.Ar / Ministry of Education</span></p>
+          <p><span class="es">Lideré un equipo interdisciplinario de 11 roles de coordinación y ~50 cuentas de contratistas, con un modelo de entrega híbrido (waterfall para compras, logística y cierre; ágil para la ejecución en terreno).</span><span class="en">Led an interdisciplinary team of 11 coordination roles and ~50 contractor accounts under a hybrid delivery model (waterfall for procurement, logistics, and closure; agile for field execution).</span></p>
+          <div class="chips">
+            <span class="chip">21.500 <span class="es">intervenciones</span><span class="en">interventions</span></span>
+            <span class="chip">9.700 <span class="es">escuelas</span><span class="en">schools</span></span>
+            <span class="chip">+50% <span class="es">sobre la meta</span><span class="en">above target</span></span>
+          </div>
+        </article>
 
+        <article class="job">
+          <h3><span class="es">Cofundador &amp; Project Manager</span><span class="en">Co-founder &amp; Project Manager</span> — <span>MedicalBit / MedicalSim</span></h3>
+          <p class="meta"><span class="es">Ene 2021 – Jul 2022 · Startup de tecnología médica</span><span class="en">Jan 2021 – Jul 2022 · Medical technology startup</span></p>
+          <p><span class="es">Llevé un simulador laparoscópico y modelos anatómicos impresos en 3D de concepto a mercado, con validación iterativa, gestión de presupuesto y riesgos y lanzamiento comercial.</span><span class="en">Took a laparoscopic simulator and 3D-printed anatomical models from concept to market, with iterative validation, budget and risk management, and commercial launch.</span></p>
+          <div class="chips">
+            <span class="chip">~50 <span class="es">casos clínicos</span><span class="en">clinical cases</span></span>
+            <span class="chip"><span class="es">3 hospitales</span><span class="en">3 hospitals</span></span>
+            <span class="chip">MVP &rarr; <span class="es">producción</span><span class="en">production</span></span>
+          </div>
+        </article>
 
-	</main>
-  <footer>
-    <p>Find me on social media.</p>
-    <a href="https://twitter.com/AugustoDevesa">  <i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/augustodevesa/">  <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  </footer>
+        <article class="job">
+          <h3>Integration Engineer — <span>Telefónica / Movistar (Novum)</span></h3>
+          <p class="meta"><span class="es">2017 – 2021 · Transformación digital · Argentina, España, Israel y Brasil</span><span class="en">2017 – 2021 · Digital transformation · Argentina, Spain, Israel, and Brazil</span></p>
+          <p><span class="es">Responsable de la integración del pilar de comunicaciones y facilitador de las integraciones de cuentas, mensajería y soporte, coordinando stakeholders técnicos y de negocio distribuidos en cuatro países.</span><span class="en">Owned the communications pillar integration and facilitated account, messaging, and support integrations, coordinating technical and business stakeholders across four countries.</span></p>
+          <div class="chips">
+            <span class="chip">1,5 M <span class="es">usuarios</span><span class="en">users</span></span>
+            <span class="chip">99,5% <span class="es">disponibilidad</span><span class="en">availability</span></span>
+            <span class="chip">4 <span class="es">países</span><span class="en">countries</span></span>
+          </div>
+        </article>
+
+        <article class="job">
+          <h3><span class="es">Project Manager — Telefónica Empresas y segmento corporativo</span><span class="en">Project Manager — Telefónica Empresas and corporate segment</span></h3>
+          <p class="meta"><span class="es">2006 – 2014 · Comunicaciones, infraestructura y networking</span><span class="en">2006 – 2014 · Communications, infrastructure, and networking</span></p>
+          <p><span class="es">Despliegue de proyectos de comunicaciones e infraestructura para Industria, Salud y Servicios. Entre los clientes: McDonald's (150 locales), Carrefour (200 locales), MetroGas, Halliburton, Barrick Gold y la Municipalidad de Tandil. Cumplí un presupuesto anual de ventas de USD 8 M en el segmento corporativo.</span><span class="en">Delivered communications and infrastructure projects for the Industry, Healthcare, and Services segments. Clients include McDonald's (150 sites), Carrefour (200 stores), MetroGas, Halliburton, Barrick Gold, and the Municipality of Tandil. Met an USD 8M annual sales budget in the corporate segment.</span></p>
+          <div class="chips">
+            <span class="chip">McDonald's</span>
+            <span class="chip">Carrefour</span>
+            <span class="chip">MetroGas</span>
+            <span class="chip">USD 8 M</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="credentials">
+        <h3><span class="es">Formación y certificaciones</span><span class="en">Education &amp; certifications</span></h3>
+        <div class="chips" style="margin-top:14px;">
+          <span class="chip"><span class="es">Ingeniero en Telecomunicaciones (UADE)</span><span class="en">Telecommunications Engineer (UADE)</span></span>
+          <span class="chip"><span class="es">Diplomatura Ágil (ITBA, 80 h)</span><span class="en">Agile Diploma (ITBA, 80 h)</span></span>
+          <span class="chip"><span class="es">Posgrado en Gestión de Proyectos (UTN, 90 h)</span><span class="en">Postgraduate in Project Management (UTN, 90 h)</span></span>
+          <span class="chip">PMP (PMI) · <span class="es">en curso</span><span class="en">in progress</span></span>
+          <span class="chip"><span class="es">Ruta Microsoft PL-200 / PL-600</span><span class="en">Microsoft PL-200 / PL-600 track</span></span>
+          <span class="chip">OCI · Mercado Pago</span>
+          <span class="chip"><span class="es">Inglés avanzado</span><span class="en">Advanced English</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NOTAS ================= -->
+  <section id="notas">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow"><span class="es">Notas</span><span class="en">Notes</span></span>
+        <h2><span class="es">Ideas sobre gestión, integración y tecnología</span><span class="en">Ideas on management, integration, and technology</span></h2>
+        <p><span class="es">Apuntes breves a partir de proyectos reales. Próximamente publicaré las versiones completas.</span><span class="en">Short notes drawn from real projects. Full versions coming soon.</span></p>
+      </div>
+
+      <div class="notes-grid">
+        <article class="note">
+          <span class="tag"><span class="es">Entrega</span><span class="en">Delivery</span></span>
+          <h3><span class="es">Entrega híbrida: waterfall para comprar, ágil para el terreno</span><span class="en">Hybrid delivery: waterfall to procure, agile in the field</span></h3>
+          <p><span class="es">Cómo combiné compras, logística y cierre en cascada con sprints de intervenciones en un programa nacional, y qué aprendí sobre dónde poner el control y dónde la flexibilidad.</span><span class="en">How I combined cascading procurement, logistics, and closure with intervention sprints on a national program, and what I learned about where to put control and where flexibility.</span></p>
+          <span class="soon"><span class="es">Próximamente</span><span class="en">Coming soon</span></span>
+        </article>
+
+        <article class="note">
+          <span class="tag"><span class="es">Integración</span><span class="en">Integration</span></span>
+          <h3><span class="es">Integrar sistemas sin sorpresas: idempotencia y firmas</span><span class="en">Integrating systems without surprises: idempotency and signatures</span></h3>
+          <p><span class="es">Contratos de API, webhooks firmados y conciliación contra la fuente de verdad. Por qué no hay que confiar en el redirect del navegador y cómo manejar credenciales con criterio.</span><span class="en">API contracts, signed webhooks, and reconciliation against the source of truth. Why not to trust the browser redirect and how to handle credentials properly.</span></p>
+          <span class="soon"><span class="es">Próximamente</span><span class="en">Coming soon</span></span>
+        </article>
+
+        <article class="note">
+          <span class="tag">Cloud</span>
+          <h3><span class="es">Arquitectura real en el free tier con OCI</span><span class="en">A real architecture on the free tier with OCI</span></h3>
+          <p><span class="es">Diseñar VCN, subredes y cómputo ARM sin gastar un dólar: decisiones de red, automatización con OCI CLI y qué limites tener en cuenta al planificar.</span><span class="en">Designing VCN, subnets, and ARM compute without spending a dollar: network decisions, OCI CLI automation, and the limits to plan around.</span></p>
+          <span class="soon"><span class="es">Próximamente</span><span class="en">Coming soon</span></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTO ================= -->
+  <section class="cta" id="contacto">
+    <div class="container">
+      <div class="cta-box">
+        <div>
+          <h2><span class="es">¿Buscás un Project Manager Senior para tu próximo desafío?</span><span class="en">Looking for a Senior Project Manager for your next challenge?</span></h2>
+          <p><span class="es">Hablemos de tu proyecto, tu equipo o tu búsqueda. Coordinemos una conversación o escribime directamente; respondo en el día.</span><span class="en">Let's talk about your project, your team, or your search. Let's book a conversation or reach out directly; I reply within the day.</span></p>
+          <div class="cta-links">
+            <a href="mailto:augustod@gmail.com">augustod@gmail.com</a>
+            <a href="https://www.linkedin.com/in/augustodevesa/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://wa.me/5491138543260" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="https://calendly.com/augustod/reunion-con-augusto-devesa" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+            <span class="es">Agendar una reunión</span><span class="en">Book a meeting</span>
+          </a>
+          <a class="btn btn-outline" href="cv/AugustoDevesa_CV_2026_ATS.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span class="es">CV en PDF (ES)</span><span class="en">Résumé PDF (ES)</span>
+          </a>
+          <a class="btn btn-outline" href="cv/AugustoDevesa_CV_2026_ATS_en.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span class="es">CV en PDF (EN)</span><span class="en">Résumé PDF (EN)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="CV_web/Selfie2026.jpg" alt="Augusto Devesa">
+          <span>Augusto<strong>Devesa</strong></span>
+        </div>
+        <p style="margin-top:18px; max-width:420px;">
+          <span class="es">Project Manager Senior. Integro tecnología, equipos y operaciones para entregar proyectos complejos a escala.</span>
+          <span class="en">Senior Project Manager. I bring together technology, teams, and operations to deliver complex projects at scale.</span>
+        </p>
+      </div>
+      <div>
+        <h4><span class="es">Navegación</span><span class="en">Navigation</span></h4>
+        <ul>
+          <li><a href="#servicios"><span class="es">Servicios</span><span class="en">Services</span></a></li>
+          <li><a href="#experiencia"><span class="es">Experiencia</span><span class="en">Experience</span></a></li>
+          <li><a href="#notas"><span class="es">Notas</span><span class="en">Notes</span></a></li>
+          <li><a href="cv/"><span class="es">CV completo</span><span class="en">Full résumé</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4><span class="es">Contacto</span><span class="en">Contact</span></h4>
+        <ul>
+          <li><a href="mailto:augustod@gmail.com">augustod@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/augustodevesa/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://wa.me/5491138543260" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://calendly.com/augustod/reunion-con-augusto-devesa" target="_blank" rel="noopener">Calendly</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Augusto Carlos Devesa. <span class="es">Todos los derechos reservados.</span><span class="en">All rights reserved.</span></span>
+      <span>Buenos Aires, Argentina · ES / EN</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btnEs = document.getElementById('btn-es');
+    var btnEn = document.getElementById('btn-en');
+
+    function setLang(lang) {
+      root.lang = lang;
+      btnEs.setAttribute('aria-pressed', String(lang === 'es'));
+      btnEn.setAttribute('aria-pressed', String(lang === 'en'));
+      document.title = lang === 'es'
+        ? 'Augusto Devesa — Project Manager Senior | Integración, Cloud y Operaciones'
+        : 'Augusto Devesa — Senior Project Manager | Integration, Cloud & Operations';
+      try { localStorage.setItem('site-lang', lang); } catch (e) { /* ignore */ }
+    }
+
+    btnEs.addEventListener('click', function () { setLang('es'); });
+    btnEn.addEventListener('click', function () { setLang('en'); });
+
+    var saved = null;
+    try { saved = localStorage.getItem('site-lang'); } catch (e) { /* ignore */ }
+    var initial = saved || ((navigator.language || 'es').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+    setLang(initial);
+
+    // mobile menu
+    var toggle = document.querySelector('.mobile-toggle');
+    var mainNav = document.getElementById('main-nav');
+    var navLinks = mainNav.querySelectorAll('a');
+
+    function closeMenu() {
+      mainNav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.innerHTML = '&#9776;';
+    }
+
+    toggle.addEventListener('click', function () {
+      var isOpen = mainNav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+    });
+
+    navLinks.forEach(function (link) { link.addEventListener('click', closeMenu); });
+
+    document.addEventListener('click', function (event) {
+      if (!mainNav.contains(event.target) && !toggle.contains(event.target) && mainNav.classList.contains('open')) {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 980 && mainNav.classList.contains('open')) { closeMenu(); }
+    });
+  })();
+</script>
+
 </body>
 </html>
