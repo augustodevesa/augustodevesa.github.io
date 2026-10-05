@@ -23,7 +23,8 @@ Resultado de la última pasada: **50 de las 52 responden 200**. Las salvedades s
 
 Ejemplos descartados durante la verificación, para que se vea el filtro aplicado:
 
-- **Grupo Núcleo**, **IPLAN** y **American Tower (`/us/careers`)** bloquean el rastreo; se reemplazó por el portal que sí responde.
+- **American Tower (`/us/careers`)** bloquea el rastreo: se reemplazó por el portal que sí responde (`careers.americantower.com`).
+- **Grupo Núcleo** e **IPLAN** bloquean el rastreo y no exponen una página de empleo verificable: quedan fuera del índice.
 - **Ecosistemas** (`ecosistemas.com.ar`) tiene el certificado TLS roto y **Crossnet** no resuelve: no entran aunque aparezcan como empleadores en tu lista de búsquedas.
 - **FiberHome** publica un único sitio global cuyo `/en/` devuelve error: no hay portal de empleo verificable.
 - Publicaciones de bolsas (Computrabajo/Bumeran) o de LinkedIn **no** se usan como dirección principal: cambian de URL y vencen.
