@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad — Augusto Devesa</title>
+<meta name="description" content="Política de privacidad de Asistente, la automatización personal de Augusto Devesa, y del sitio augustodevesa.github.io.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://augustodevesa.github.io/privacidad/">
+<style>
+  :root {
+    --bg: #08131f;
+    --bg-soft: #0b1a29;
+    --surface: rgba(255, 255, 255, .045);
+    --border: rgba(255, 255, 255, .09);
+    --text: #e9f0f6;
+    --muted: #93a6b7;
+    --turquesa: #2ec6c6;
+    --grad: linear-gradient(135deg, #2ec6c6 0%, #46a8dd 45%, #82d95e 100%);
+    --radio: 22px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Manrope", Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--turquesa); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { width: min(860px, calc(100% - 40px)); margin: 0 auto; }
+  html[lang="en"] .es { display: none !important; }
+  html[lang="es"] .en { display: none !important; }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 22px 0;
+  }
+  .head-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+  .brand { font-size: 18px; font-weight: 700; letter-spacing: .01em; color: var(--text); }
+  .brand strong { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .head-links { display: flex; gap: 18px; align-items: center; font-size: 14px; color: var(--muted); }
+  .head-links a { color: var(--muted); }
+  .head-links a:hover { color: var(--turquesa); text-decoration: none; }
+  .lang-btn {
+    background: transparent; border: 1px solid var(--border); border-radius: 999px;
+    color: var(--muted); font: inherit; font-size: 12px; padding: 4px 12px; cursor: pointer;
+  }
+  .lang-btn[aria-pressed="true"] { color: var(--bg); background: var(--turquesa); border-color: var(--turquesa); font-weight: 700; }
+  main { padding: 54px 0 70px; }
+  h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.2; letter-spacing: -.02em; margin-bottom: 12px; }
+  .updated { color: var(--muted); font-size: 14px; margin-bottom: 34px; }
+  h2 {
+    font-size: 20px; margin: 36px 0 10px; letter-spacing: -.01em;
+    padding-top: 22px; border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { color: #cddae5; font-size: 15.5px; }
+  p { margin-bottom: 14px; }
+  ul { margin: 0 0 14px 20px; }
+  li { margin-bottom: 7px; }
+  code { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 1px 6px; font-size: 13.5px; }
+  .callout {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radio);
+    padding: 20px 22px; margin: 24px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  footer { border-top: 1px solid var(--border); padding: 26px 0 40px; color: var(--muted); font-size: 13.5px; }
+  @media (max-width: 640px) { main { padding: 36px 0 50px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container head-row">
+    <a class="brand" href="../">Augusto<strong>Devesa</strong></a>
+    <div class="head-links">
+      <a href="../"><span class="es">Inicio</span><span class="en">Home</span></a>
+      <a href="../cv/"><span class="es">CV</span><span class="en">Résumé</span></a>
+      <button type="button" class="lang-btn" id="btn-es" aria-pressed="true">ES</button>
+      <button type="button" class="lang-btn" id="btn-en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h1><span class="es">Política de privacidad</span><span class="en">Privacy policy</span></h1>
+    <p class="updated">
+      <span class="es">Última actualización: 23 de octubre de 2026 · Aplica a <strong>Asistente</strong> y a este sitio.</span>
+      <span class="en">Last updated: October 23, 2026 · Applies to <strong>Asistente</strong> and to this site.</span>
+    </p>
+
+    <h2><span class="es">1. Quién es el responsable</span><span class="en">1. Who is responsible</span></h2>
+    <p>
+      <span class="es"><strong>Asistente</strong> es una aplicación de automatización personal desarrollada y operada por Augusto Carlos Devesa, con domicilio en Buenos Aires, Argentina. No es un producto comercial, no se ofrece a terceros y no se distribuye públicamente: la usa únicamente su autor sobre su propia cuenta de Google.</span>
+      <span class="en"><strong>Asistente</strong> is a personal automation application developed and operated by Augusto Carlos Devesa, based in Buenos Aires, Argentina. It is not a commercial product, it is not offered to third parties and it is not publicly distributed: it is used only by its author on his own Google account.</span>
+    </p>
+    <p>
+      <span class="es">Contacto para cualquier consulta sobre esta política: <a href="mailto:augustod@gmail.com">augustod@gmail.com</a>.</span>
+      <span class="en">Contact for any question about this policy: <a href="mailto:augustod@gmail.com">augustod@gmail.com</a>.</span>
+    </p>
+
+    <h2><span class="es">2. Qué datos de Google se acceden</span><span class="en">2. What Google data is accessed</span></h2>
+    <p>
+      <span class="es">Con autorización OAuth explícita del titular de la cuenta, la aplicación accede a los siguientes servicios y únicamente a los permisos que se indican:</span>
+      <span class="en">With the account holder's explicit OAuth authorization, the application accesses the following services and only the permissions listed:</span>
+    </p>
+    <ul>
+      <li><span class="es"><strong>Gmail</strong> — leer mensajes y metadatos, enviar y modificar etiquetas de correo.</span><span class="en"><strong>Gmail</strong> — read messages and metadata, send mail and modify labels.</span></li>
+      <li><span class="es"><strong>Google Calendar</strong> — leer, crear y modificar eventos.</span><span class="en"><strong>Google Calendar</strong> — read, create and modify events.</span></li>
+      <li><span class="es"><strong>Google Drive</strong> — buscar, leer, subir y organizar archivos.</span><span class="en"><strong>Google Drive</strong> — search, read, upload and organize files.</span></li>
+      <li><span class="es"><strong>Google Sheets y Docs</strong> — leer y escribir hojas de cálculo y documentos.</span><span class="en"><strong>Google Sheets and Docs</strong> — read and write spreadsheets and documents.</span></li>
+      <li><span class="es"><strong>Google Contacts</strong> — lectura de nombres, correos y teléfonos (sólo lectura).</span><span class="en"><strong>Google Contacts</strong> — read names, email addresses and phone numbers (read-only).</span></li>
+      <li><span class="es"><strong>Perfil básico</strong> — dirección de correo e identificador de la cuenta, para saber a qué cuenta pertenece el token.</span><span class="en"><strong>Basic profile</strong> — email address and account identifier, to know which account a token belongs to.</span></li>
+    </ul>
+
+    <h2><span class="es">3. Para qué se usan</span><span class="en">3. How it is used</span></h2>
+    <p>
+      <span class="es">Los datos se usan exclusivamente para ejecutar tareas que el titular pide por escrito al asistente: resumir correo, redactar y responder mensajes, consultar y crear eventos de agenda, leer y escribir documentos y planillas, y organizar archivos. No hay perfilamiento publicitario, ni análisis de comportamiento, ni decisiones automatizadas con efectos legales sobre ninguna persona.</span>
+      <span class="en">The data is used exclusively to carry out tasks the account holder requests in writing from the assistant: summarizing mail, drafting and replying to messages, reading and creating calendar events, reading and writing documents and spreadsheets, and organizing files. There is no advertising profiling, no behavioural analytics, and no automated decision-making with legal effects on any person.</span>
+    </p>
+
+    <h2><span class="es">4. Dónde se almacenan</span><span class="en">4. Where it is stored</span></h2>
+    <p>
+      <span class="es">Las credenciales OAuth (token de acceso y de refresco) se guardan en un servidor propio, una instancia de Oracle Cloud Infrastructure administrada por el titular, en archivos con permisos restringidos (<code>chmod 600</code>). El contenido que se procesa para responder un pedido vive en memoria durante la ejecución; no se construye una base de datos de correo ni de archivos, no se hacen copias de respaldo de contenido de Gmail y no se envía nada a servidores de terceros.</span>
+      <span class="en">OAuth credentials (access and refresh tokens) are stored on a server owned by the account holder, an Oracle Cloud Infrastructure instance he administers, in files with restricted permissions (<code>chmod 600</code>). Content processed to answer a request lives in memory during execution; no mail or file database is built, no Gmail content backups are made, and nothing is sent to third-party servers.</span>
+    </p>
+
+    <h2><span class="es">5. Con quién se comparte</span><span class="en">5. With whom it is shared</span></h2>
+    <p>
+      <span class="es">Con nadie. No se venden, alquilan, ceden ni transfieren datos de usuarios de Google a terceros. No se usan para publicidad, ni para entrenar modelos de terceros, ni para determinar solvencia o scoring. El único procesamiento externo es el que el propio titular elige al pedir una tarea, y los proveedores de modelo de lenguaje que el titular configura para esa tarea reciben únicamente el fragmento necesario para responderla.</span>
+      <span class="en">With no one. Google user data is not sold, rented, transferred or disclosed to third parties. It is not used for advertising, not used to train third-party models, and not used for credit or scoring purposes. The only external processing is what the account holder chooses when requesting a task, and the language-model providers he configures for that task receive only the excerpt needed to answer it.</span>
+    </p>
+
+    <h2><span class="es">6. Uso limitado</span><span class="en">6. Limited Use</span></h2>
+    <div class="callout">
+      <p>
+        <span class="es">El uso y la transferencia que Asistente hace de la información recibida de las API de Google a cualquier otra aplicación cumple con la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Datos de Usuarios de los Servicios de API de Google</a>, incluidos los requisitos de Uso Limitado (Limited Use).</span>
+        <span class="en">Asistente's use and transfer of information received from Google APIs to any other app adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</span>
+      </p>
+    </div>
+
+    <h2><span class="es">7. Conservación y eliminación</span><span class="en">7. Retention and deletion</span></h2>
+    <p>
+      <span class="es">El acceso se mantiene mientras el titular quiera usar la aplicación. Se puede revocar en cualquier momento desde <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>, lo que invalida los tokens de inmediato; el archivo de credenciales local se borra al revocar. Los pedidos de eliminación de cualquier otro dato se atienden escribiendo a <a href="mailto:augustod@gmail.com">augustod@gmail.com</a> y se resuelven dentro de los 30 días.</span>
+      <span class="en">Access is kept for as long as the account holder wants to use the application. It can be revoked at any time from <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>, which invalidates the tokens immediately; the local credential file is deleted on revocation. Requests to delete any other data are handled by writing to <a href="mailto:augustod@gmail.com">augustod@gmail.com</a> and are resolved within 30 days.</span>
+    </p>
+
+    <h2><span class="es">8. Seguridad</span><span class="en">8. Security</span></h2>
+    <p>
+      <span class="es">El servidor se actualiza periódicamente, el acceso es por clave SSH (sin contraseñas), las credenciales tienen permisos de archivo restringidos y las claves privadas se guardan cifradas. Ningún empleado ni tercero tiene acceso a la cuenta.</span>
+      <span class="en">The server is patched regularly, access is by SSH key (no passwords), credentials carry restricted file permissions and private keys are stored encrypted. No employee or third party has access to the account.</span>
+    </p>
+
+    <h2><span class="es">9. Este sitio web</span><span class="en">9. This website</span></h2>
+    <p>
+      <span class="es">augustodevesa.github.io es un sitio estático alojado en GitHub Pages. No usa cookies de seguimiento ni analítica de terceros; sólo guarda en el navegador la preferencia de idioma (ES/EN) en <code>localStorage</code>, que no identifica a nadie. GitHub puede registrar la dirección IP en sus registros de servidor según su propia política.</span>
+      <span class="en">augustodevesa.github.io is a static site hosted on GitHub Pages. It uses no tracking cookies and no third-party analytics; it only stores the language preference (ES/EN) in <code>localStorage</code>, which identifies no one. GitHub may log the IP address in its own server logs under its own policy.</span>
+    </p>
+
+    <h2><span class="es">10. Cambios</span><span class="en">10. Changes</span></h2>
+    <p>
+      <span class="es">Si esta política cambia, se actualiza la fecha del encabezado y el historial de versiones queda público en el repositorio del sitio.</span>
+      <span class="en">If this policy changes, the date at the top is updated and the version history remains public in the site repository.</span>
+    </p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Augusto Carlos Devesa · <a href="../"><span class="es">Volver al inicio</span><span class="en">Back to home</span></a></span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btnEs = document.getElementById('btn-es');
+    var btnEn = document.getElementById('btn-en');
+
+    function setLang(lang) {
+      root.lang = lang;
+      btnEs.setAttribute('aria-pressed', String(lang === 'es'));
+      btnEn.setAttribute('aria-pressed', String(lang === 'en'));
+      try { localStorage.setItem('site-lang', lang); } catch (e) { /* ignore */ }
+    }
+
+    btnEs.addEventListener('click', function () { setLang('es'); });
+    btnEn.addEventListener('click', function () { setLang('en'); });
+
+    var saved = null;
+    try { saved = localStorage.getItem('site-lang'); } catch (e) { /* ignore */ }
+    setLang(saved === 'en' ? 'en' : 'es');
+  })();
+</script>
+
+</body>
+</html>
