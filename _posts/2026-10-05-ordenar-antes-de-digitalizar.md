@@ -47,7 +47,7 @@ Una PyME invirtió u$s 250.000 en llevarse a la nube y logró una mejora sustanc
 
 **¿Tu PyME está poniendo el control donde va y la flexibilidad donde rinde?** Como Project Manager Senior lideré integración de sistemas, cloud y operaciones a escala nacional. Si querés ordenar la tecnología de tu empresa con foco en procesos y resultados, hablemos.
 
-👉 [Ver mi perfil y CV completo](https://augustodevesa.github.io) · [Agendá una reunión](https://calendly.com/augustod/reunion-con-augusto-devesa) · augustod@gmail.com
+👉 [Ver mi perfil y CV completo](https://amjois.com.ar) · [Agendá una reunión](https://calendly.com/augustod/reunion-con-augusto-devesa) · augustod@gmail.com
 
 ---
 
