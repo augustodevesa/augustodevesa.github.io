@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Asistente (aplicación de prueba privada)</title>
+<meta name="description" content="Política de privacidad de Asistente, aplicación de prueba privada de uso personal.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+  :root { --bg:#08131f; --surface:rgba(255,255,255,.045); --border:rgba(255,255,255,.09);
+          --text:#e9f0f6; --muted:#93a6b7; --turquesa:#2ec6c6; --radio:18px; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:"Manrope",Arial,sans-serif; color:var(--text); background:var(--bg);
+         line-height:1.7; -webkit-font-smoothing:antialiased; }
+  .wrap { width:min(760px, calc(100% - 40px)); margin:0 auto; padding:56px 0 70px; }
+  a { color:var(--turquesa); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  h1 { font-size:clamp(24px,4vw,32px); line-height:1.25; margin-bottom:8px; letter-spacing:-.01em; }
+  .sub { color:var(--muted); font-size:14px; margin-bottom:30px; }
+  h2 { font-size:17px; margin:28px 0 8px; padding-top:18px; border-top:1px solid var(--border); }
+  h2:first-of-type { border-top:0; padding-top:0; }
+  p { font-size:15px; color:#cddae5; margin-bottom:12px; }
+  ul { margin:0 0 12px 20px; }
+  li { font-size:15px; color:#cddae5; margin-bottom:6px; }
+  .box { background:var(--surface); border:1px solid var(--border); border-radius:var(--radio);
+         padding:18px 20px; margin:22px 0; }
+  .box p:last-child { margin-bottom:0; }
+  .en { margin-top:44px; padding-top:26px; border-top:1px solid var(--border); }
+  .en h1 { font-size:20px; }
+  footer { margin-top:40px; color:var(--muted); font-size:13px; }
+  code { background:var(--surface); border:1px solid var(--border); border-radius:5px; padding:1px 5px; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Política de privacidad — Asistente</h1>
+  <p class="sub">Aplicación de prueba privada · Última actualización: 26 de octubre de 2026</p>
+
+  <h2>Qué es esta aplicación</h2>
+  <p>Asistente es una <strong>aplicación de prueba privada</strong>, de uso exclusivamente personal, desarrollada y operada por Augusto Carlos Devesa (Buenos Aires, Argentina). No es un producto comercial, no está publicada al público, no se distribuye y no admite otros usuarios: funciona únicamente sobre la cuenta de Google de su propio autor, que es también quien la autoriza.</p>
+
+  <h2>Qué datos de Google se acceden</h2>
+  <p>Con la autorización OAuth del titular de la cuenta, la aplicación accede a los permisos estrictamente necesarios para ejecutar las tareas que ese mismo titular le pide:</p>
+  <ul>
+    <li>Gmail — leer, enviar y clasificar correo.</li>
+    <li>Google Calendar — leer, crear y modificar eventos.</li>
+    <li>Google Drive — buscar, leer y organizar archivos.</li>
+    <li>Google Sheets y Docs — leer y escribir hojas de cálculo y documentos.</li>
+    <li>Google Contacts — sólo lectura de nombres, correos y teléfonos.</li>
+    <li>Perfil básico — correo e identificador de cuenta, para saber a qué cuenta pertenece el token.</li>
+  </ul>
+
+  <h2>Para qué se usan y dónde se guardan</h2>
+  <p>Los datos se usan sólo para responder pedidos concretos del titular: resumir correo, redactar respuestas, gestionar agenda y documentos, organizar archivos. No hay perfilamiento, ni publicidad, ni analítica.</p>
+  <p>Las credenciales OAuth se guardan en un servidor propio del titular (instancia de Oracle Cloud Infrastructure) en archivos con permisos restringidos <code>chmod 600</code>. El contenido procesado vive en memoria durante la ejecución: no se construye una base de datos de correo ni de archivos, y no se hacen copias de respaldo de contenido de Gmail.</p>
+
+  <h2>Con quién se comparte</h2>
+  <p>Con nadie. No se venden, alquilan, ceden ni transfieren datos de usuarios de Google a terceros, no se usan para publicidad ni para entrenar modelos de terceros.</p>
+
+  <div class="box">
+    <p>El uso y la transferencia que esta aplicación hace de la información recibida de las API de Google a cualquier otra aplicación cumple con la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Datos de Usuarios de los Servicios de API de Google</a>, incluidos los requisitos de Uso Limitado (Limited Use).</p>
+  </div>
+
+  <h2>Conservación y eliminación</h2>
+  <p>El acceso se mantiene mientras el titular quiera usarla. Se revoca en cualquier momento desde <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>, lo que invalida los tokens de inmediato; el archivo de credenciales local se borra al revocar. Cualquier otro pedido de eliminación se atiende escribiendo a <a href="mailto:augustod@gmail.com">augustod@gmail.com</a> y se resuelve dentro de 30 días.</p>
+
+  <h2>Contacto</h2>
+  <p>Augusto Carlos Devesa · Buenos Aires, Argentina · <a href="mailto:augustod@gmail.com">augustod@gmail.com</a></p>
+
+  <div class="en">
+    <h1>Privacy policy (English)</h1>
+    <p class="sub">Private test application · Last updated: October 26, 2026</p>
+    <p><strong>Asistente</strong> is a private, personal-use test application developed and operated by Augusto Carlos Devesa (Buenos Aires, Argentina). It is not a commercial product, it is not publicly distributed and it has no users other than its author, who is the owner of the Google account that authorizes it.</p>
+    <p>With the account holder's OAuth authorization it accesses Gmail (read, send, label), Google Calendar (read and write events), Google Drive (search, read, organize files), Google Sheets and Docs (read and write), Google Contacts (read-only) and the basic profile (email and account id). The data is used only to execute the tasks that account holder requests; there is no profiling, advertising or analytics.</p>
+    <p>OAuth credentials are stored on a server owned by the account holder (an Oracle Cloud Infrastructure instance) in files with restricted permissions (<code>chmod 600</code>). Processed content lives in memory during execution; no mail or file database is built and no Gmail content backups are made. Google user data is not sold, rented or shared with third parties.</p>
+    <p>Asistente's use and transfer of information received from Google APIs to any other app adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>. Other deletion requests: <a href="mailto:augustod@gmail.com">augustod@gmail.com</a> (answered within 30 days). Contact: Augusto Carlos Devesa, Buenos Aires, Argentina.</p>
+  </div>
+
+  <footer>
+    <a href="https://amjois.com.ar/">amjois.com.ar</a> · Página no indexada, no enlazada desde el sitio.
+  </footer>
+
+</div>
+</body>
+</html>
